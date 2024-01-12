@@ -1,7 +1,7 @@
-import Card from "./components/card/Card";
+import Button from "./components/button/Button";
 
 export default function Home() {
   return (
-    <Card />
+    <Button target="_blank" text='Text'/>
   )
 }
