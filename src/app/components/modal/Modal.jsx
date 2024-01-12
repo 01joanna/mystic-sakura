@@ -2,12 +2,13 @@ import Image from "next/image"
 import LeftWing from "../../../../public/assets/img/modal-images/wings-left.png"
 import RightWing from "../../../../public/assets/img/modal-images/wings-right.png"
 import SaltoSakura from "../../../../public/assets/img/Salto-Sakura.jpg"
-// import ModalVertical from "../../../../public/assets/img/modal-images/odal-vertical.png"
+import ModalVertical from "../../../../public/assets/img/modal-images/modal-vertical.png"
 // import ModalHorizontal from "../../../../public/assets/img/modal-images/modal-horizontal.png"
 
 export default function Modal() {
     return (
         <section className="flex flex-row">
+            <img src={ModalVertical} alt="Imagen de adorno esquinero vertical" />
             <Image 
             src={LeftWing}
             alt="Imagen del ala izquierdo"
@@ -16,7 +17,6 @@ export default function Modal() {
             className="flex"
             />
             <div className="bg-purple-950 h-auto w-[35rem] flex flex-row p-4">
-
                 <Image
                 src={SaltoSakura}
                 alt="Imagen de la carta correspondiente"
