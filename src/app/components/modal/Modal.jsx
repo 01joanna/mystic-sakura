@@ -8,7 +8,6 @@ import ModalVertical from "../../../../public/assets/img/modal-images/modal-vert
 export default function Modal() {
     return (
         <section className="flex flex-row">
-            <img src={ModalVertical} alt="Imagen de adorno esquinero vertical" />
             <Image 
             src={LeftWing}
             alt="Imagen del ala izquierdo"
