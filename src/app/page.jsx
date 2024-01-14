@@ -1,7 +1,7 @@
-import PlaceholderCard from "./components/placeholderCard/PlaceholderCard";
+import PlaceholderCardGroup from "./placeholderCardGroup/PlaceholderCardGroup";
 
 export default function Home() {
   return (
-    <PlaceholderCard />
+    <PlaceholderCardGroup />
   )
 }
