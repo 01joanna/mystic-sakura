@@ -1,7 +1,7 @@
-import Button from "./components/button/Button";
+import PlaceholderCard from "./components/placeholderCard/PlaceholderCard";
 
 export default function Home() {
   return (
-    <Button target="_blank" text='Text'/>
+    <PlaceholderCard />
   )
 }

@@ -1,0 +1,7 @@
+.placeholderBorderActive{
+    background: linear-gradient(135deg, #9538dE, #5700ab);
+}
+
+.placeholderBorderInactive{
+    background: linear-gradient(135deg, #8B7ADA, #322473);
+}
