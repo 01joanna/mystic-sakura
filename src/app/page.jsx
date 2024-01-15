@@ -1,6 +1,20 @@
+import Button from "./components/button/Button";
+import Kero from "@/app/components/animation/kero";
 
 export default function Home() {
   return (
-    <h1>Hola Mundo</h1>
-  )
+    <>
+      <div className="flex gap-6 pt-5">
+        <Button
+          text="Ver significado"
+          sourceIcon="/assets/images/btn-icon-blue.svg"
+        />
+        <Button
+          text="Volver a tirar"
+          sourceIcon="/assets/images/btn-icon-pink.svg"
+        />
+      </div>
+      <Kero />
+    </>
+  );
 }
