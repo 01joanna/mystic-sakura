@@ -19,7 +19,7 @@ module.exports = {
         yellowDark: "#918666",
         pureWhite: "#FFFFFF",
         blueDark: "#201043",
-        purpleColor: "#DO2FDD",
+        purpleColor: "#D02FDD",
       },
       fontFamily: {
         showcard: ["Showcard Gothic", "sans-serif"],

@@ -1,27 +1,28 @@
 import Image from "next/image";
 import SaltoSakura from "../../../../public/assets/img/Salto-Sakura.jpg"
 
-export default function ModalContent() {
+export default function ModalContent({reverse}) {
+    const containerStyle = reverse ? "flex-row-reverse" : "flex-row";
+
     return (
-        <section className="flex flex-row 
-        m-20
-        ">
+        <section className={`flex ${containerStyle} 
+        w-[20rem] h-[14rem] lg:w-[41.4rem] lg:h-[23rem]`}>
             {/* Imagen de prueba para visualización  */}
-        <section>
+        <figure>
             <Image
             src={SaltoSakura}
             alt="Imagen de la carta correspondiente"
-            // width={500}
-            // height={341}
+            width={180}
+            height={223}
             objectFit="cover"
-            className="p-6"
-            style={{ width: '500px', height: '340px' }}
+            className="p-3"
+            // style={{ width: '500px', height: '340px' }}
             />
-        </section>
+        </figure>
         <aside className="relative z-0 flex flex-col items-center justify-center">
             {/* cambiar el color del titulo cuando consiga saber el porque no recoge purplecolor */}
-            <h3 className="text-yellowColor text-justify text-5xl font-showcard">El Salto</h3>
-            <p className="text-pureWhite text-3xl text-justify m-6 font-jost">Representa la evasión de los problemas.</p>
+            <h3 className=" text-yellowColor lg:text-purpleColor text-justify text-base font-showcard lg:text-5xl">El Salto</h3>
+            <p className="text-pureWhite text-sm text-justify m-6 font-jost lg:text-3xl">Representa la evasión de los problemas.</p>
         </aside>
         </section>
     )
