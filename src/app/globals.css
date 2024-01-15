@@ -12,4 +12,6 @@
 
 
 
-body {}
+body {
+  background-image: url("../../public/assets//images/background.png");
+}
