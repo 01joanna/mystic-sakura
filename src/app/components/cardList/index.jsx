@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "@/app/components/cardList/styles.module.css";
 import Card from "@/app/components/card";
 import clsx from "clsx";
@@ -20,6 +20,7 @@ export default function CardList() {
 
   const firstGroupCard = cards.slice(0, 27);
   const secondGropuCard = cards.slice(27, cards.length - 1);
+
   return (
     <section className="flex flex-col justify-center items-center ">
       <div className={clsx(styles.cardContainer, "w-[90%]")}>
@@ -55,6 +56,7 @@ export default function CardList() {
         height={300}
         alt="icon scroll"
         src={"/assets/images/arrows.svg"}
+        className={styles.scrollVector}
       />
     </section>
   );

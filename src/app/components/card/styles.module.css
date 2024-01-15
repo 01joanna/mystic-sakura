@@ -7,9 +7,8 @@
     border-left: 0.2rem inset #f4becb;
     cursor: pointer;
     transform-style: preserve-3d;
-    perspective: 1000px;
     box-shadow: -3px 2px 4px 0px rgb(21 21 21 / 46%), -1px 5px 6px 0px rgb(0 0 0 / 43%);
-    transition: transform 0.8s cubic-bezier(.65, .05, .36, 1), transform-origin 0s, z-index 0s;
+    transition: transform 0.8s cubic-bezier(.65, .05, .36, 1), transform-origin 0s;
 }
 
 .card img {
@@ -18,4 +17,20 @@
     object-fit: cover;
     border-radius: 0.5rem;
 
+}
+
+@media(min-width:1200px) {
+    .card {
+        width: 88px;
+        height: 190px;
+        box-shadow: 2px 7px 5px 0px rgb(21 21 21 / 61%), -1px 10px 6px 0px rgb(0 0 0 / 58%);
+    }
+}
+
+@media(min-width:1600px) {
+    .card {
+        width: 110px;
+        height: 245px;
+        box-shadow: -3px 2px 4px 0px rgb(21 21 21 / 61%), -2px 7px 6px 0px rgb(0 0 0 / 58%);
+    }
 }

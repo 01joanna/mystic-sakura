@@ -15,19 +15,41 @@ export default function Card({ url, id }) {
     setItsHover(false);
   };
   //style position
-  const translateValueX = id < 28 ? id * 8 : -8 * (id - 27);
-  const translateValueY = id % 2 == 0 ? 0.3 : -0.3;
-  // let rotation = 0;
+  const calculateTranslateValues = (id) => {
+    const width = window.innerWidth;
+    let rotation = 0;
+    // Aplicar estilos según el ancho de la pantalla
+    if (width < 1500) {
+      rotation = 0;
+      // Estilos para pantallas pequeñas
+      return {
+        translateValueX: id < 28 ? id * 8 : 8 * (id - 27),
+        translateValueY: id % 2 === 0 ? 0.3 : -0.3,
+        rotation: rotation,
+      };
+    } else {
+      if ((id >= 0 && id <= 27) || (id >= 28 && id <= 55)) {
+        if (id >= 0 && id <= 27) {
+          // Rotación gradual de 1 a 27
+          rotation = (id - 1) * (6 / 26); // Se asume que quieres 180 grados en total
+          rotation += itsHover ? -4 : 0;
+        } else {
+          // Rotación gradual de 28 a 54
+          rotation = (34 - id) * (4 / 26); // Se asume que quieres 180 grados en total
+          rotation += itsHover ? 4 : 0;
+        }
+      }
+      // Estilos para pantallas más grandes
+      return {
+        translateValueX: id < 28 ? id * 2.5 : -2.5 * (id - 27),
+        translateValueY: id % 2 === 0 ? 0.3 : -0.3,
+        rotation: rotation,
+      };
+    }
+  };
+  const { translateValueX, translateValueY, rotation } =
+    calculateTranslateValues(id);
   let translateYOnHover = itsHover ? -3 : 0;
-  // if ((id >= 17 && id < 28) || (id >= 44 && id <= 54)) {
-  //   if (id >= 17 && id < 28) {
-  //     rotation = 2 + (id - 27) * 0.2;
-  //     rotation += itsHover ? -5 : 0;
-  //   } else {
-  //     rotation = -2 - (53 - id) * -0.2;
-  //     const a = (rotation += itsHover ? 5 : 0);
-  //   }
-  // }
 
   translateYOnHover = itsHover ? translateYOnHover + 0.2 : translateValueY;
 
@@ -36,7 +58,7 @@ export default function Card({ url, id }) {
       onMouseOver={handleItsHover}
       onMouseOut={handleMouseOut}
       style={{
-        transform: `translate(${translateValueX}rem,${
+        transform: `rotateZ(${rotation}deg) translate(${translateValueX}rem,${
           itsHover ? translateYOnHover : translateValueY
         }rem)`,
         // visibility: isDroped ? "hidden" : "visible",
