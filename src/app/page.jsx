@@ -1,4 +1,4 @@
-import PlaceholderCardGroup from "./placeholderCardGroup/PlaceholderCardGroup";
+import PlaceholderCardGroup from "./components/placeholderCardGroup/PlaceholderCardGroup";
 
 export default function Home() {
   return (
