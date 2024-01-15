@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+ Sakura Tarot
 
-First, run the development server:
+Este proyecto tiene como objetivo hacer una aplicación que consuma la API de Sakura que devuelve un archivo JSON con la información de las cartas- un tarot virtual que nos diga nuestro pasado, presente y futuro. El usuario podrá escoger una carta para el pasado, otra para el presente y otra para el futuro, después podrá obtener el significado de cada carta que ha elegido. La versión propuesta está en español y utiliza tecnologías modernas como React.js y Next.js para garantizar escalabilidad y rendimiento y persistencia de datos con Json-server.  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+ 🛠️ Tecnologías
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- HTML
+- CSS
+- Javascript
+- React.js
+- Json-server
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+📌Requisitos para el Funcionamiento Actual
+Visual Studio Code
+Node.js
+Npm
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+💿 Instalación del Repositorio
 
-## Learn More
+1,Clona este repositorio.
 
-To learn more about Next.js, take a look at the following resources:
+https://github.com/01joanna/mystic-sakura.git
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2.Instalar Dependencias.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+cd mystic-sakura
+npm install
 
-## Deploy on Vercel
+⚙️ Configuración
+Este proyecto utiliza una API externa para obtener datos de las cartas, para la información de las cartas. Asegúrate de que estos datos estén correctamente configurados antes de ejecutar la aplicación.
+- Para obtener todas las cartas : https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/
+- Para obtener una carta por id : https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/:id
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+📂 Estructura del Proyecto
+Está organizada de la siguiente manera: mystic-sakura/
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+| ...
+| public/
+|   └── assets/
+├         |── images/
+| src/
+|   └── app/
+|       ├── layout/
+|       |   
+|       ├── page/
+|       └── ...
+|   └── components/
+|       ├── button/
+|       |   ├── 
+|       |   
+|       ├── card/
+|       ├── cardList/
+|       └── placeholderCard
