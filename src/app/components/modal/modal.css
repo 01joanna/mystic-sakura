@@ -1,0 +1,53 @@
+
+/* sección: adornos verticales y horizontales */
+/* .horizontal-top {
+    position: absolute;
+    top: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.horizontal-bottom {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+.vertical-left {
+    display: none;
+    position: absolute;
+    transform: rotate(90deg);
+    left: -2rem;
+    top: 50%;
+}
+.vertical-right {
+    display: none;
+    position: absolute;
+    transform: rotate(90deg);
+    right: -2rem;
+    top: 50%;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    align-items: center;
+    justify-content: center;
+    /* margin: 3rem 0.5rem; */
+}
+
+@media screen and (min-width: 992px) {
+    .vertical-left, .vertical-right {
+        display: flex;
+    }
+
+    .content-container {
+        justify-content: flex-start;
+    }
+
+
+}
