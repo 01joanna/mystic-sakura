@@ -1,0 +1,70 @@
+.kero {
+    background-image: url(/assets/images/kero/kero-sakura.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 18em;
+    height: 18rem;
+    animation-name: swimmingfish;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 8;
+}
+
+@keyframes swimmingfish {
+    0% {
+        transform: translate(1px, 5px);
+    }
+
+    25% {
+        transform: translate(3px, -3px);
+    }
+
+    50% {
+        transform: translate(-5px, 2px);
+    }
+
+    75% {
+        transform: translate(-5px, -3px);
+    }
+
+    100% {
+        transform: translate(1px, 5px);
+    }
+}
+
+.wing {
+    animation: wingFlap 0.8s ease-in-out infinite;
+    transform-origin: left;
+}
+
+@keyframes wingFlap {
+
+    0%,
+    30%,
+    100% {
+        transform: rotateY(0);
+    }
+
+    15% {
+        transform: rotateY(40deg);
+    }
+}
+
+.eye {
+    animation: eyeFlap 4s ease-in-out infinite;
+}
+
+@keyframes eyeFlap {
+
+    0%,
+    30%,
+    100% {
+        display: none;
+    }
+
+    15% {
+        display: block;
+    }
+}

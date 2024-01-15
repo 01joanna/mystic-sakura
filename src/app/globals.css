@@ -8,8 +8,12 @@
   box-sizing: border-box;
 }
 
-:root {}
+
+html {
+  font-size: 10px;
+}
 
 
-
-body {}
+body {
+  background-image: url("../../public/assets//images/background.png");
+}
