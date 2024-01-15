@@ -1,0 +1,36 @@
+
+/* sección: adornos verticales y horizontales */
+.horizontal-top {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.horizontal-bottom {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.vertical-left {
+    position: absolute;
+    transform: rotate(90deg);
+    left: -2rem;
+    top: 50%;
+}
+.vertical-right {
+    position: absolute;
+    transform: rotate(90deg);
+    right: -2rem;
+    top: 50%;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    height: 30rem;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
