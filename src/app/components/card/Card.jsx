@@ -1,6 +1,7 @@
-
-export default function Card() {
+export default function Card({ card }) {
     return (
-        <h1>Hola mundo</h1>
-    )
+        <div className="max-w-sm rounded overflow-hidden shadow-lg">
+            <img className="w-full" src={card.sakuraCard} alt={card.englishName} />
+        </div>
+    );
 }
