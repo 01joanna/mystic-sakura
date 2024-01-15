@@ -1,7 +1,8 @@
-import Button from "./components/button/Button";
+import PlaceholderCardGroup from "./components/placeholderCardGroup/PlaceholderCardGroup";
 
 export default function Home() {
   return (
+<<<<<<< HEAD
     <div className="flex gap-6 pt-5">
       <Button
         text="Ver significado"
@@ -14,3 +15,8 @@ export default function Home() {
     </div>
   );
 }
+=======
+    <PlaceholderCardGroup />
+  )
+}
+>>>>>>> feature-placeholderCard
