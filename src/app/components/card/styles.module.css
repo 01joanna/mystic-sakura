@@ -1,0 +1,21 @@
+.card {
+    width: 70px;
+    border-radius: 0.5rem;
+    height: 154px;
+    position: absolute;
+    border-top: 0.1rem solid #fdccd8;
+    border-left: 0.2rem inset #f4becb;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    box-shadow: -3px 2px 4px 0px rgb(21 21 21 / 46%), -1px 5px 6px 0px rgb(0 0 0 / 43%);
+    transition: transform 0.8s cubic-bezier(.65, .05, .36, 1), transform-origin 0s, z-index 0s;
+}
+
+.card img {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+
+}

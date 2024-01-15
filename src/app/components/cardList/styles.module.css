@@ -1,0 +1,45 @@
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    height: 35rem;
+    margin: 0 auto;
+    gap: 12rem;
+    scroll-snap-type: both mandatory;
+}
+
+.cardContainer::-webkit-scrollbar {
+    scroll-snap-type: x mandatory;
+    display: none;
+}
+
+.cardContainer::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #a656a9;
+    border-radius: 1rem;
+}
+
+.cardContainer::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-image: -webkit-gradient(linear,
+            left bottom,
+            left top,
+            color-stop(0.44, #583182),
+            color-stop(0.72, #583182),
+            color-stop(0.86, #583182));
+}
+
+.cardGroupOne {
+    left: -20%;
+    padding-top: 5rem;
+}
+
+.cardGrouptwo {
+    right: -740%;
+}
+
+.cardContainer>div:nth-child(2)>div {
+    border-right: 0.2rem inset #f4becb;
+    border-left: none;
+}
