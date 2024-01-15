@@ -1,5 +1,5 @@
 import React from 'react';
-import PlaceholderCard from "../placeholderCard/PlaceholderCard";
+import PlaceholderCard from "@/app/components/placeholderCard/PlaceholderCard";
 
 export default function PlaceholderCardGroup() {
     return (
