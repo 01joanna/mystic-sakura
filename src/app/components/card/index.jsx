@@ -1,11 +1,39 @@
 "use client";
+import { useDrag } from "react-dnd";
 import Image from "next/image";
 import clsx from "clsx";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { SakuraContext } from "@/app/context";
 import styles from "@/app/components/card/styles.module.css";
 
-export default function Card({ url, id }) {
+export default function Card({ url, id, name }) {
+  // llamamamos al contexto:
+  const { setIsOpenModal, selectedItemsLength } = useContext(SakuraContext);
   const [itsHover, setItsHover] = useState(false);
+  const [isDroped, setIsDroped] = useState(false);
+  const [{ isDragging }, drag] = useDrag(
+    () => ({
+      type: "card",
+      item: { name: name },
+      end: (item, monitor) => {
+        const dropResult = monitor.getDropResult();
+        if (item && dropResult) {
+          setIsDroped(true);
+        }
+      },
+      collect: (monitor) => ({
+        isDragging: monitor.isDragging(),
+      }),
+      canDrag: () => {
+        if (selectedItemsLength === 3) {
+          setIsOpenModal(true);
+          return false;
+        }
+        return true;
+      },
+    }),
+    [selectedItemsLength]
+  );
   // function de la animation
   const handleItsHover = () => {
     setItsHover(true);
@@ -55,13 +83,15 @@ export default function Card({ url, id }) {
 
   return (
     <div
+      ref={drag}
+      id={id}
       onMouseOver={handleItsHover}
       onMouseOut={handleMouseOut}
       style={{
         transform: `rotateZ(${rotation}deg) translate(${translateValueX}rem,${
           itsHover ? translateYOnHover : translateValueY
         }rem)`,
-        // visibility: isDroped ? "hidden" : "visible",
+        visibility: isDroped ? "hidden" : "visible",
       }}
       className={clsx(styles.card)}
     >

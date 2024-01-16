@@ -32,6 +32,7 @@ export default function CardList() {
         <div className={clsx(styles.cardGroupOne, "flex relative")}>
           {firstGroupCard.map((card) => {
             const reverseCardUrl = card.cardsReverse.sakuraReverse;
+
             return (
               <Card
                 name={card}
