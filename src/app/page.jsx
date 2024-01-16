@@ -1,3 +1,3 @@
-export default function UserPage() {
-  return <h1>hola usuario</h1>;
+export default function PageAnimation() {
+  return <h1 className="text-white text-[5rem]">Animacionnnn</h1>;
 }
