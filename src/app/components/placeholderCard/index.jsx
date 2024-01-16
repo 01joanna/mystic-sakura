@@ -4,20 +4,20 @@ import styles from "@/app/components/placeholderCard/styles.module.css";
 import { useDrop } from "react-dnd";
 import { SakuraContext } from "@/app/context";
 import { useContext, useState } from "react";
-export default function PlaceholderCard({
-  color,
-  setCount,
-  predictionTime,
-  time,
-  background,
-}) {
+import clsx from "clsx";
+
+export default function PlaceholderCard({ predictionTime, time, background }) {
   const [currentCard, setCurrentCard] = useState(null);
   const [isDropEnabled, setIsDropEnable] = useState(true);
   // estado para revelar
   const [reveal, setReveal] = useState(false);
   // llamamamos al contexto:
-  const { setSelectedItems, selectedItemsLength, filterSelectedItems } =
-    useContext(SakuraContext);
+  const {
+    setSelectedItems,
+    selectedItemsLength,
+    filterSelectedItems,
+    setCount,
+  } = useContext(SakuraContext);
 
   const isDroppable = !currentCard;
 
@@ -27,6 +27,7 @@ export default function PlaceholderCard({
       drop: (item, monitor) => {
         const currentCard = { ...item.name, predictionTime };
         setCurrentCard(currentCard);
+        document.getElementById(currentCard.id).style.visibility = "hidden";
         setIsDropEnable(false);
         setSelectedItems((prevItems) => [...prevItems, currentCard]);
       },
@@ -66,18 +67,23 @@ export default function PlaceholderCard({
   return (
     <article
       ref={drop}
-      className={`${styles.placeholder} ${
-        isActive ? color : background
-      } w-[94px] px-1.5 py-2  rounded-lg m-1 lg:w-[151px] h-[209px] md:w-[150px] md:h-[340px] lg:h-[341px] min-[1400px]:w-[160px] min-[1400px]:h-[360px] min-[1400px]:p-[0.8rem] min-[1600px]:w-[180px] min-[1600px]:h-[409px] `}
-    >
-      {currentCard && (
-        <Image
-          height={200}
-          width={150}
-          src={renderImageCard}
-          alt={currentCard?.spanishName}
-        />
+      className={clsx(
+        styles.placeholder,
+        canDrop ? styles.dragAnimation : background,
+        isOver ? styles.inAnimation : background,
+        currentCard ? "0" : "px-1.5",
+        currentCard ? "0" : "py-2",
+        currentCard ? "bg-cover" : background,
+        currentCard ? styles.bgAnimation : background,
+        "w-[94px] rounded-lg m-1 lg:w-[151px] h-[209px] md:w-[150px] md:h-[340px] lg:h-[341px]",
+        "min-[1400px]:w-[160px] min-[1400px]:h-[360px]",
+        currentCard ? "min-[1400px]:p-[0rem]" : "min-[1400px]:p-[0.8rem]",
+        "min-[1600px]:w-[180px] min-[1600px]:h-[404px]"
       )}
+      style={{
+        backgroundImage: currentCard ? `url(${renderImageCard})` : "none",
+      }}
+    >
       {renderRevealText && (
         <button className="bg-white p-3" name="reveal" onClick={handleReveal}>
           Reveal
@@ -104,7 +110,10 @@ export default function PlaceholderCard({
             alt="Círculo mágico de Sakura"
             width={69}
             height={72}
-            className={"pb-4 md:w-[100px] lg:w-[120px] min-[1400px]:w-[130px]"}
+            className={clsx(
+              styles.placeholderAnimation,
+              "pb-4 md:w-[100px] lg:w-[120px] min-[1400px]:w-[130px]"
+            )}
           />
           <p className="text-yellowColor text-[12px] md:text-[1.2rem] lg:text-[1.5rem] lg:pt-[0.5rem] text-center font-jost w-3/4 pt-0.5 tracking-[.07rem] min-[1400px]:text-[1.5rem] ">
             Elige una carta

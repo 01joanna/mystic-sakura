@@ -1,23 +1,40 @@
 "use client";
 import { createContext, useState } from "react";
 
-export const initialValues = {
-  selectedItems: [],
-  setSelectedItems: () => undefined,
-  setIsOpenModal: () => undefined,
-  selectedItemsLength: 0,
-  filterSelectedItems: () => undefined,
-  handleCloseModal: () => undefined,
-  isOpenModal: false,
-};
-
 export const SakuraContext = createContext([]);
 
 export default function SakuraProvider({ children }) {
+  const [count, setCount] = useState(0);
   const [selectedItems, setSelectedItems] = useState([]);
+  const [isOpenModal, setIsOpenModal] = useState(false);
+
+  const selectedItemsLength = selectedItems.length;
+  const isAllCardsRevealed = count === 3 ? false : true;
+
+  const filterSelectedItems = (id) => {
+    const filterResult = selectedItems.filter((item) => item.id !== id);
+    setSelectedItems(filterResult);
+    // Remover el item de acuerdo al index y reemplazar por undefined.
+  };
+  const handleCloseModal = () => {
+    setIsOpenModal(false);
+  };
 
   return (
-    <SakuraContext.Provider value={{ selectedItems, setSelectedItems }}>
+    <SakuraContext.Provider
+      value={{
+        selectedItems,
+        setSelectedItems,
+        setIsOpenModal,
+        selectedItemsLength,
+        filterSelectedItems,
+        handleCloseModal,
+        isOpenModal,
+        setCount,
+        count,
+        isAllCardsRevealed,
+      }}
+    >
       {children}
     </SakuraContext.Provider>
   );

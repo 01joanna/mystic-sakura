@@ -3,7 +3,7 @@
     flex-direction: column;
     overflow-y: hidden;
     overflow-x: scroll;
-    height: 35rem;
+    height: 40rem;
     margin: 0 auto;
     gap: 12rem;
     scroll-behavior: smooth;
