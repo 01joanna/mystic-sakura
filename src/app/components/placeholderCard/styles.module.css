@@ -1,8 +1,3 @@
-.placeholderBorderActive{
-    background: linear-gradient(135deg, #9538dE, #5700ab);
+.placeholder {
+    box-shadow: 0 2.5rem 2rem -2rem hsl(200deg 69.39% 7.27%);
 }
-
-.placeholderBorderInactive{
-    background: linear-gradient(135deg, #8B7ADA, #322473);
-}
-

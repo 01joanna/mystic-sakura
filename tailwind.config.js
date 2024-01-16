@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-radial": "linear-gradient(to purple, red, blue)",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
@@ -19,8 +19,9 @@ module.exports = {
         yellowDark: "#918666",
         pureWhite: "#FFFFFF",
         blueDark: "#201043",
+        blueLigth: "#270c4f",
         purpleColor: "#D02FDD",
-        purplePlaceholder: "#380063",
+        purpleDrak: "#380063",
         bluePlaceHolder: "#1C133E",
       },
       fontFamily: {

@@ -24,7 +24,7 @@
 }
 
 .cardGrouptwo {
-    left: -15%;
+    left: -22%;
 }
 
 
@@ -35,7 +35,16 @@
 
 @media(min-width:1200px) {
     .cardContainer {
-        height: 45rem;
+        height: 41rem;
+    }
+}
+
+@media(min-width:1400px) {
+    .sectionCards {
+        margin-top: 4rem;
+        flex-direction: row;
+        align-items: normal;
+        height: 25rem;
     }
 }
 
@@ -67,5 +76,12 @@
         flex-basis: 50%;
         justify-content: end;
         left: 2.5rem;
+    }
+}
+
+@media(min-width:1600px) {
+    .sectionCards {
+
+        height: 30rem;
     }
 }

@@ -15,7 +15,7 @@ html {
 
 
 body {
-  background-image: url("/assets/images/background.png");
+  background-image: url("../../public/assets//images/background.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

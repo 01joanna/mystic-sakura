@@ -22,7 +22,12 @@ export default function CardList() {
   const secondGropuCard = cards.slice(27, cards.length - 1);
 
   return (
-    <section className="flex flex-col justify-center items-center ">
+    <section
+      className={clsx(
+        styles.sectionCards,
+        "flex flex-col justify-center items-center xl:h-[45rem]"
+      )}
+    >
       <div className={clsx(styles.cardContainer, "w-[90%]")}>
         <div className={clsx(styles.cardGroupOne, "flex relative")}>
           {firstGroupCard.map((card) => {
