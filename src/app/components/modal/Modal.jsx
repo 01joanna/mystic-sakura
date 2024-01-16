@@ -1,5 +1,5 @@
 import Image from "next/image"
-import './modal.css'
+import './styles.module.css'
 import LeftWing from "../../../../public/assets/img/wings-left.png"
 import RightWing from "../../../../public/assets/img/wings-right.png"
 import ModalVertical from "../../../../public/assets/img/modal-vertical.png"
