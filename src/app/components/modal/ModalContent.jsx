@@ -1,5 +1,6 @@
 import Image from "next/image";
-import SaltoSakura from "../../../../public/assets/img/Salto-Sakura.jpg"
+import './styles.module.css'
+import SaltoSakura from "../../../../public/assets/images/Salto-Sakura.jpg"
 
 export default function ModalContent({reverse}) {
     const containerStyle = reverse ? "flex-row-reverse" : "flex-row";
