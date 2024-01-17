@@ -4,7 +4,6 @@ import LeftWing from "../../../../public/assets/images/wings-left.png"
 import RightWing from "../../../../public/assets/images/wings-right.png"
 import ModalVertical from "../../../../public/assets/images/modal-vertical.png"
 import ModalHorizontal from "../../../../public/assets/images/adorno-horizontal.png"
-import CloseIcon from '../../../../public/assets/images/xmark-solid.svg'
 
 import ModalContent from "./ModalContent"
 
@@ -20,7 +19,6 @@ export default function Modal() {
             />
             <div className="bg-purpleDark h-[55rem] w-[21.4rem] flex flex-col justify-around items-center rounded-3xl lg:w-[53rem] lg:h-[35.5rem]">
                 <Image src={ModalHorizontal} alt="Imagen de adorno horizontal, arriba" width={324} height={22} className={`${"horizontal-top"}  lg:w-[52.8rem] lg:h-[3.6rem] top-1`}/>
-                <Image src={CloseIcon} alt="Icono de cierre" width={15} height={15} className="text-yellowColor absolute top-10 right-[12rem]"/>
                 <section className="flex flex-col w-full h-full overflow-y-scroll items-center justify-center -mt-20 lg:mt-0">
                     <ModalContent />
                     <ModalContent reverse/>
