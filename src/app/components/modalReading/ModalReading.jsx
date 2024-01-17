@@ -1,7 +1,7 @@
 import Image from "next/image";
 import './styles.css'
 
-export default function ModalContent({reverse}) {
+export default function ModalReading({reverse}) {
     const containerStyle = reverse ? "flex-row-reverse" : "flex-row";
 
     return (
