@@ -3,12 +3,13 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 18em;
-    height: 18rem;
+    width: 15rem;
+    height: 15rem;
     animation-name: swimmingfish;
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    position: absolute;
     z-index: 8;
 }
 
@@ -66,5 +67,48 @@
 
     15% {
         display: block;
+    }
+}
+
+.info {
+    background-image: url(/assets/images/kero/carta-info.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 4rem;
+    height: 8rem;
+    animation: float 4s linear infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(3px, -4px);
+    }
+
+    75% {
+
+        transform: translate(-4px, 3px);
+    }
+
+    100% {
+
+        transform: translate(3px, -4px);
+    }
+}
+
+@media(min-width:1400px) {
+    .kero {
+
+        width: 18rem;
+        height: 18rem;
+
+    }
+
+    .wing {
+        width: 7rem;
+    }
+
+    .eye {
+        width: 6.6rem;
     }
 }

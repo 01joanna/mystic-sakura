@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Image from "next/image";
 // import CardList from "@/app/components/cardList";
 import Modal from "./components/modal/Modal";
@@ -37,4 +38,8 @@ export default function Home() {
       <Modal />
     </>
   );
+=======
+export default function PageAnimation() {
+  return <h1 className="text-white text-[5rem]">Animacionnnn</h1>;
+>>>>>>> dev
 }

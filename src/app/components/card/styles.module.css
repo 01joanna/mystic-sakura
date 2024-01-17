@@ -8,6 +8,7 @@
     cursor: pointer;
     transform-style: preserve-3d;
     box-shadow: -3px 2px 4px 0px rgb(21 21 21 / 46%), -1px 5px 6px 0px rgb(0 0 0 / 43%);
+    animation: move-path 160s ease both infinite alternate;
     transition: transform 0.8s cubic-bezier(.65, .05, .36, 1), transform-origin 0s;
 }
 
