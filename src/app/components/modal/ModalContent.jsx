@@ -1,5 +1,5 @@
 import Image from "next/image";
-import './styles.module.css'
+import './styles.css'
 import SaltoSakura from "../../../../public/assets/images/Salto-Sakura.jpg"
 
 export default function ModalContent({reverse}) {
