@@ -1,7 +1,5 @@
 import Image from "next/image"
 import './styles.css'
-import ModalVertical from "../../../../public/assets/images/modal-vertical.png"
-import ModalHorizontal from "../../../../public/assets/images/adorno-horizontal.png"
 
 import ModalContent from "./ModalContent"
 
