@@ -1,8 +1,169 @@
-.placeholderBorderActive{
-    background: linear-gradient(135deg, #9538dE, #5700ab);
+.placeholder {
+    box-shadow: 0 2.5rem 2rem -2rem hsl(200deg 69.39% 7.27%);
 }
 
-.placeholderBorderInactive{
-    background: linear-gradient(135deg, #8B7ADA, #322473);
+.dragAnimation {
+    box-shadow: -1px 0rem 5rem 2rem hsl(266.82deg 52.86% 19.27%);
+    transition: all 0.8s ease-in-out;
+    filter: blur(0.05px);
+    background-color: rgb(31, 17, 49);
 }
 
+.inAnimation {
+    background: #ffea98;
+    transition: all 0.8s ease-in-out;
+    box-shadow: -1px 0rem 1rem 0rem hsl(47.49deg 100% 75.77%);
+    filter: blur(0.05px);
+}
+
+.inAnimation>div {
+    border: 2px solid #cebc76;
+    filter: blur(0.2px);
+}
+
+.inAnimation>div::before,
+.inAnimation>div::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 2px solid #cebc76;
+    filter: blur(0.8px);
+}
+
+
+.inAnimation>div p,
+.inAnimation>div h3 {
+    color: rgb(159, 151, 55);
+
+}
+
+.cardBg {
+    background-color: aqua;
+}
+
+.bgAnimationPASADO,
+.bgAnimationPRESENTE,
+.bgAnimationFUTURO {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    border: 2px solid #cebc76;
+    box-shadow: 0px 0rem 1.4rem 0rem hsl(47.49deg 100% 75.77%);
+    transform-origin: center center;
+    animation: swing 2s ease infinite;
+}
+
+.bgAnimationPASADO {
+    animation-delay: 0.9s;
+}
+
+.bgAnimationFUTURO {
+    animation-delay: 0.5s;
+}
+
+
+@keyframes swing {
+    20% {
+        transform: rotate(3deg);
+    }
+
+    40% {
+        transform: rotate(-1deg);
+    }
+
+    60% {
+        transform: rotate(2deg);
+    }
+
+    80% {
+        transform: rotate(-1deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.btnRevelar {
+    background: #c992ff;
+    color: #633c89;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 1px -1px 10px 2px #c992ff;
+    filter: drop-shadow(0px -1px 1px rgba(0, 0, 0, 0.5));
+}
+
+@keyframes wobble {
+    0% {
+        transform: translateX(0%);
+    }
+
+    15% {
+        transform: translateX(-3%) rotate(-2deg);
+    }
+
+    30% {
+        transform: translateX(3%) rotate(3deg);
+    }
+
+    45% {
+        transform: translateX(-3%) rotate(-2deg);
+    }
+
+    60% {
+        transform: translateX(3%) rotate(2deg);
+    }
+
+    75% {
+        transform: translateX(-2%) rotate(-1deg);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.btnRevelar:hover {
+    background: #633c89;
+    color: #c992ff;
+    transition: ease all 0.8s;
+    animation: wobble 2s ease infinite;
+}
+
+.btnCambiar:hover {
+    transition: ease all 0.8s;
+    animation: wobble 2s ease infinite;
+    background: #c992ff;
+    color: #633c89;
+}
+
+.btnCambiar {
+    background: #633c89;
+    color: #c992ff;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 1px -1px 7px 3px #633c89;
+}
+
+.animationRevel {
+    transition: all ease;
+    animation: shadowAnimation 3s ease-in-out;
+}
+
+@keyframes shadowAnimation {
+    0% {
+        box-shadow: 0px 0px 0px rgba(151, 80, 199, 0.77), 0px 0px 0px rgba(161, 99, 192, 0.5);
+    }
+
+    50% {
+        box-shadow: 0px 0px 20px 20px rgb(159 125 213 / 50%), 0px -4px 10px 4px rgb(230 133 255 / 50%);
+    }
+
+    100% {
+        box-shadow: 0px 0px 0px rgba(213, 89, 255, 0.5), 0px 0px 0px rgba(94, 25, 126, 0.5);
+    }
+
+}
