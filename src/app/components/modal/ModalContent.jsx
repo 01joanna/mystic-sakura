@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SaltoSakura from "../../../../public/assets/img/Salto-Sakura.jpg"
+import './styles.css'
 
 export default function ModalContent({reverse}) {
     const containerStyle = reverse ? "flex-row-reverse" : "flex-row";
@@ -10,7 +10,7 @@ export default function ModalContent({reverse}) {
             {/* Imagen de prueba para visualización  */}
         <figure>
             <Image
-            src={SaltoSakura}
+            src={"/assets/images/Salto-Sakura.jpg"}
             alt="Imagen de la carta correspondiente"
             width={180}
             height={223}
