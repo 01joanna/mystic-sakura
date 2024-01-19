@@ -6,7 +6,7 @@ export default function PlaceholderCardGroup() {
   return (
     <section
       className={
-        "mt-[5rem] mb-[4rem] flex flex-row gap-[6rem] items-center justify-center lg:mt-[0] lg:mb-[2rem] min-[1400px]:mt-[-7rem]  min-[1400px]:mb-[0] "
+        "mt-[5rem] mb-[4rem] flex flex-row gap-[2rem] items-center justify-center lg:mt-[0] lg:mb-[2rem] min-[1400px]:mt-[-7rem]  min-[1400px]:mb-[0] "
       }
     >
       <PlaceholderCard

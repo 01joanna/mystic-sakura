@@ -16,7 +16,7 @@ export default function Kero() {
   };
   return (
     <>
-      <div className="relative inline-block left-[82%]  xl:left-[86%] min-[1400px]:left-[84%] min-[1600px]:left-[87%]">
+      <div className="relative inline-block left-[80%]  xl:left-[86%] min-[1400px]:left-[84%] min-[1600px]:left-[87%]">
         <div className={clsx(styles.kero, " hidden lg:block lg:w-[15rem] ")}>
           <Image
             width={65}
@@ -42,7 +42,7 @@ export default function Kero() {
         <button
           onClick={handleOpenModal}
           className={
-            "cursor-pointer absolute bottom-[0] min-[600px]:top-[-2rem] md:left-[5rem] lg:top-[12.6rem] lg:left-[6.5rem] lg:z-[1] min-[1500px]:top-[15.3rem] min-[1500px]:left-[8rem]"
+            "cursor-pointer absolute bottom-[0] min-[600px]:top-[-2rem] md:left-[5rem] lg:top-[12.6rem] lg:left-[6.5rem] lg:z-[1] min-[1500px]:top-[14.5rem] min-[1500px]:left-[8rem]"
           }
         >
           <div className={clsx(styles.info)}></div>

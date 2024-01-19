@@ -123,10 +123,19 @@ export default function PlaceholderCard({
             onClick={handleEdit}
             className={clsx(
               styles.btnCambiar,
-              "bg- p-4 font-showcard tracking-[0.1rem] text-[1.4rem] lg:text-[1.8rem]"
+              " relative bg- p-4 font-showcard tracking-[0.2rem] text-[1.4rem] lg:text-[1.8rem]"
             )}
             name="delete"
           >
+            <div className={clsx(styles.iconTriangle, "hidden lg:block")}>
+              <Image
+                src={"/assets/images/triangle.png"}
+                alt="triangulo magic"
+                width={25}
+                height={25}
+                className={clsx(styles.triangle)}
+              />
+            </div>
             CAMBIAR
           </button>
         )}
