@@ -6,7 +6,12 @@ import { SakuraContext } from "@/app/context";
 import { useContext, useState } from "react";
 import clsx from "clsx";
 
-export default function PlaceholderCard({ predictionTime, time, background }) {
+export default function PlaceholderCard({
+  predictionTime,
+  time,
+  background,
+  showReveledBtn,
+}) {
   const [currentCard, setCurrentCard] = useState(null);
   const [isDropEnabled, setIsDropEnable] = useState(true);
   // estado para revelar
@@ -100,7 +105,7 @@ export default function PlaceholderCard({ predictionTime, time, background }) {
           backgroundImage: currentCard ? `url(${renderImageCard})` : "none",
         }}
       >
-        {renderRevealText && (
+        {renderRevealText && showReveledBtn && (
           <button
             className={clsx(
               styles.btnRevelar,

@@ -15,8 +15,12 @@ import styles from "@/app/home/styles.module.css";
 import clsx from "clsx";
 
 export default function HomeApp() {
-  const { isAllCardsRevealed, isOpenModal, handleCloseModal } =
-    useContext(SakuraContext);
+  const {
+    isAllCardsRevealed,
+    isOpenModal,
+    handleCloseModal,
+    selectedItemsLength,
+  } = useContext(SakuraContext);
   const router = useRouter();
   return (
     <>
@@ -29,12 +33,12 @@ export default function HomeApp() {
       </DndProvider>
       <div
         className={clsx(
-          isAllCardsRevealed && styles.btnReading,
+          !(selectedItemsLength === 3) && styles.btnReading,
           "flex justify-center mt-[8rem] mb-[6rem] lg:mt-[11rem] lg:mb-[8rem] min-[1400px]:mt-[6rem]  min-[1400px]:m-b[4rem] min-[1600px]:mt-[4rem]"
         )}
       >
         <Button
-          disabled={isAllCardsRevealed}
+          disabled={!(selectedItemsLength === 3)}
           onClick={() => {
             router.push("/reading");
           }}
