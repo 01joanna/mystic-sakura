@@ -6,16 +6,16 @@ export default function ModalReading({reverse}) {
 
     return (
         <div className={`flex
-        w-[20rem] h-[14rem] border-2 border-red-300 lg:w-[41.4rem] lg:h-[23rem]`}>
+        w-[20rem] h-[14rem] lg:w-[41.4rem] lg:h-[23rem]`}>
         <section className={`${containerStyle} flex flex-row relative z-0`}>
             <figure>
                 <Image
                 src={"/assets/images/Salto-Sakura.jpg"}
                 alt="Imagen de la carta correspondiente"
-                width={80}
+                width={86}
                 height={223}
                 objectFit="cover"
-                className="p-3"
+                className="p-3 lg:w-[140px]"
                 />
         </figure>
             <aside className="flex flex-col items-center justify-center">
