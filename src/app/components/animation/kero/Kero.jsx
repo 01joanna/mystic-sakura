@@ -3,7 +3,7 @@ import Image from "next/image";
 import clsx from "clsx";
 import { useState } from "react";
 import styles from "@/app/components/animation/kero/styles.module.css";
-import ModalInfo from "@/app/components/modalInfo";
+import ModalInfo from "@/app/components/modalInfo/ModalInfo";
 export default function Kero() {
   const [modalOpen, setModalOpen] = useState(false);
 

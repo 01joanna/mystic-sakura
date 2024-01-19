@@ -1,23 +1,23 @@
 "use client";
-import CardList from "@/app/components/cardList";
-import Kero from "@/app/components/animation/kero";
-import Star from "@/app/components/animation/star";
-import PlaceholderCardGroup from "@/app/components/placeholderCardGroup";
-import ModalInfo from "@/app/components/modalInfo";
+import CardList from "@/app/components/cardList/CardList";
+import Kero from "@/app/components/animation/kero/Kero";
+import Star from "@/app/components/animation/star/Star";
+import PlaceholderCardGroup from "@/app/components/placeholderCardGroup/PlaceholderCradGroup";
+import ModalInfo from "@/app/components/modalInfo/ModalInfo";
 import Button from "@/app/components/button/Button";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { DndProvider } from "react-dnd";
 import { SakuraContext } from "@/app/context";
 import { useContext } from "react";
 import { useRouter } from "next/navigation";
-import Header from "@/app/components/header";
+import Header from "@/app/components/header/Header";
 import styles from "@/app/home/styles.module.css";
 import clsx from "clsx";
+
 export default function HomeApp() {
   const { isAllCardsRevealed, isOpenModal, handleCloseModal } =
     useContext(SakuraContext);
   const router = useRouter();
-
   return (
     <>
       <Star />
