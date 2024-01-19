@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-radial": "linear-gradient(to purple, red, blue)",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
@@ -19,7 +19,10 @@ module.exports = {
         yellowDark: "#918666",
         pureWhite: "#FFFFFF",
         blueDark: "#201043",
-        purpleColor: "#DO2FDD",
+        blueLigth: "#270c4f",
+        purpleColor: "#D02FDD",
+        purpleDrak: "#380063",
+        bluePlaceHolder: "#1C133E",
       },
       fontFamily: {
         showcard: ["Showcard Gothic", "sans-serif"],
