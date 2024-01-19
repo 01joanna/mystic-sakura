@@ -38,21 +38,21 @@ export default function ReadingApp() {
         <Button
           disabled={!(selectedItemsLength === 3)}
           onClick={() => {
-            router.push("/reading");
+            router.push("/src/app/components/modalInfo");
           }}
-          text={"Lectura"}
+          text={"VER SIGNIFICADO"}
           sourceIcon={"/assets/images/btn-icon-pink.svg"}
         />
 
         <Button
           disabled={!(selectedItemsLength === 3)}
           onClick={() => {
-            router.push("/reading");
+            router.push("/src/app/components/modalInfo");
           }}
-          text={"Lectura"}
+          text={"VOLVER A TIRAR"}
           sourceIcon={"/assets/images/btn-icon-pink.svg"}
         />
-        
+
       </div>
     </>
   );

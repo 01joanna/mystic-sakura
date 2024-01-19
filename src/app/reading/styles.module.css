@@ -2,6 +2,8 @@
     position: relative;
     width: 100vw;
     overflow: hidden;
+    display: flex;
+    justify-content: space-around;
 }
 
 .btnReading button {
@@ -9,3 +11,4 @@
     opacity: 0.4;
     filter: grayscale(1);
 }
+
