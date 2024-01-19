@@ -1,49 +1,36 @@
 import Image from "next/image"
-import LeftWing from "../../../../public/assets/img/wings-left.png"
-import RightWing from "../../../../public/assets/img/wings-right.png"
-import SaltoSakura from "../../../../public/assets/img/Salto-Sakura.jpg"
-import ModalVertical from "../../../../public/assets/img/modal-vertical.png"
-import ModalHorizontal from "../../../../public/assets/img/adorno-horizontal.png"
-import CloseIcon from '../../../../public/assets/img/xmark-solid.svg'
+import './styles.css'
 
-export default function Modal() {
+import ModalReading from "../modalReading/ModalReading"
+
+export default function Modal({ children }) {
     return (
-        <section className="relative flex flex-row items-center justify-center p">
-            <Image 
-            src={LeftWing}
+        <section className="relative flex flex-row items-center justify-center pb-10 lg:justify-between lg:border-s">
+            <Image
+            src={"/assets/images/wings-left.png"}
             alt="Imagen del ala izquierdo"
             width={400}
             height={266}
-            className="flex-none absolute -left-20 z-10"
+            className="flex-none absolute left-20 top-4 z-10 hidden lg:flex"
             />
-            <div className="bg-purple-950 h-[35.6rem] w-[53rem] flex flex-row relative">            
-            <div>
-                <Image src={ModalHorizontal} alt="Imagen de adorno horizontal, arriba" width={846} height={58} className="absolute top-0 left-1/2 transform -translate-x-1/2" />
-                <Image src={ModalHorizontal} alt="Imagen de adorno horizontal, abajo" width={846} height={58} className="absolute bottom-0 left-1/2 transform -translate-x-1/2"/>
-                {/* <Image src={ModalVertical} alt="Imagen de adorno horizontal, izquierda" width={582} height={10} className="absolute inset-y-0 right-full rotate-90"/> */}
-                {/* <Image src={ModalVertical} alt="Imagen de adorno horizontal, derecha" width={582} height={30} className="absolute inset-y-0 left-0 rotate-90"/> */}
-            </div>
-                <span>{/* Imagen de prueba para visualización  */}
-                    <Image
-                    src={SaltoSakura}
-                    alt="Imagen de la carta correspondiente"
-                    width={700}
-                    height={340}
-                    className="p-6 mt-10"
-                    />
-                </span>
-                <div className="relative z-0">
-                    <h3 className="text-fuchsia-600 text-center text-2xl mt-20 ">Card name</h3>
-                    <p className="text-slate-50 text-justify m-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam viverra lobortis lorem, sit amet efficitur justo tempor non. In hac habitasse platea dictumst. Morbi pellentesque erat neque, at hendrerit lacus hendrerit porta. Curabitur ornare fringilla quam, nec tristique lectus pharetra vel. Sed finibus arcu quis enim accumsan hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                </div>
+
+            <div className="bg-purpleDark h-[55rem] w-[21.4rem] flex flex-col justify-around items-center rounded-3xl lg:w-[53rem] lg:h-[35.5rem]">
+                <Image src={"/assets/images/adorno-horizontal.png"} alt="Imagen de adorno horizontal, arriba" width={324} height={22} className={`${"horizontal-top"}  lg:w-[52.8rem] lg:h-[3.6rem] top-1`}/>
+                <section className="flex flex-col w-full h-full overflow-y-scroll items-center justify-center -mt-20 lg:mt-0">
+            {children}
+                </section>
+                <Image src={"/assets/images/adorno-horizontal.png"} alt="Imagen de adorno horizontal, abajo" width={324} height={22} className={`${"horizontal-bottom"} lg:w-[52.8rem] lg:h-[3.6rem]`}/>
+                <Image src={"/assets/images/adorno-vertical.png"}  alt="Imagen de adorno horizontal, izquierda" width={355} height={57} className={`${"vertical-left"} hidden lg:flex`}/>
+                <Image src={"/assets/images/adorno-vertical.png"}  alt="Imagen de adorno horizontal, derecha" width={355} height={57} className={`${"vertical-right"} hidden lg:flex`}/>
                 {/* <Button /> */}
             </div>
-            <Image 
-            src={RightWing}
+            
+            <Image
+            src={"/assets/images/wings-right.png"}
             alt="Imagen del ala derecho"
             width={400}
             height={100}
-            className="flex-none absolute -right-20 z-10"
+            className="flex-none absolute right-20 top-4 z-10 hidden lg:flex"
             />
         </section>
     )

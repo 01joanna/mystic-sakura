@@ -8,8 +8,17 @@
   box-sizing: border-box;
 }
 
-:root {}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth
+}
 
 
-
-body {}
+body {
+  background-image: url("../../public/assets//images/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
+}
