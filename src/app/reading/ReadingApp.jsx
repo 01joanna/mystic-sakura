@@ -32,7 +32,7 @@ export default function ReadingApp() {
       <div
         className={clsx(
           !(selectedItemsLength === 3) && styles.btnReading,
-          "flex justify-center mt-[8rem] mb-[6rem] lg:mt-[11rem] lg:mb-[8rem] min-[1400px]:mt-[6rem]  min-[1400px]:m-b[4rem] min-[1600px]:mt-[4rem]"
+          "flex justify-center mt-[8rem] mb-[6rem] lg:mt-[11rem] lg:mb-[8rem] min-[1400px]:mt-[19rem]  min-[1400px]:m-b[4rem] min-[1600px]:mt-[4rem]"
         )}
       >
         <Button
@@ -57,3 +57,8 @@ export default function ReadingApp() {
     </>
   );
 }
+
+
+
+
+
