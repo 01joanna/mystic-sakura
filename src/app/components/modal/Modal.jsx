@@ -14,19 +14,19 @@ export default function Modal({ children }) {
             className="flex-none absolute right-[460px] top-14 z-10 hidden lg:flex"
             />
 
-            <div className="bg-purpleDark h-full w-[21.4rem] flex flex-col justify-around items-center rounded-3xl lg:w-[53rem] lg:h-[35.5rem]">
+            <div className="bg-purpleDark h-full w-[21.4rem] flex flex-col justify-around items-center rounded-3xl lg:w-[53rem] lg:h-[40rem]">
                 <Image src={"/assets/images/adorno-horizontal.png"} alt="Imagen de adorno horizontal, arriba" width={324} height={22} className={`${"horizontal-top"} mt-2 lg:w-[52.8rem] lg:h-[3.6rem] lg:mb-8`}/>
-                <section className="flex flex-col w-full h-full overflow-y-scroll items-center justify-center lg:justify-start  lg:mt-0">
+                <section className="flex flex-col w-full h-full overflow-y-scroll items-center justify-center lg:justify-start lg:gap-32 py-10">
                     <ModalReading />
                     <ModalReading reverse />
                     <ModalReading />
                 </section>
+                <Image src={"/assets/images/icon-arrow-down.svg"} alt="Icon scroll down" width={30} height={30} className={`hidden lg:flex absolute bottom-20`}/>
                 <Image src={"/assets/images/adorno-horizontal.png"} alt="Imagen de adorno horizontal, abajo" width={324} height={22} className={`${"horizontal-bottom"} mb-2 lg:w-[52.8rem] lg:h-[3.6rem] lg:mt-8`}/>
-                {/* <Image src={"/assets/images/adorno-vertical.png"}  alt="Imagen de adorno horizontal, izquierda" width={355} height={57} className={`${"vertical-left"} hidden lg:flex`}/>
-                <Image src={"/assets/images/adorno-vertical.png"}  alt="Imagen de adorno horizontal, derecha" width={355} height={57} className={`${"vertical-right"} hidden lg:flex`}/> */}
-                {/* <Button /> */}
+                <Image src={"/assets/images/modal-vertical.png"}  alt="Imagen de adorno horizontal, izquierda" width={355} height={57} className={`hidden lg:flex rotate-90 absolute bottom-65 right-[335px]`}/>
+                <Image src={"/assets/images/modal-vertical.png"}  alt="Imagen de adorno horizontal, derecha" width={355} height={57} className={`hidden lg:flex rotate-90 absolute bottom-65 left-[335px]`}/>
+                
             </div>
-            
             <Image
             src={"/assets/images/wings-right.png"}
             alt="Imagen del ala derecho"
