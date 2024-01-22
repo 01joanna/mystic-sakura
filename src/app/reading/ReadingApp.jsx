@@ -8,7 +8,7 @@ import CardPrediction from "@/app/components/cardPredition/CardPredition";
 import Header from "@/app/components/header/Header";
 import styles from "@/app/reading/styles.module.css";
 import clsx from "clsx";
-import Modal from "../components/modal/Modal";
+import ModalDescription from "../components/modal/ModalDescription";
 
 export default function ReadingApp() {
   const {
@@ -31,6 +31,7 @@ export default function ReadingApp() {
 
   const handleOpenModal = () => {
     setModalOpen(true);
+    console.log("click");
   };
 
   const handleCloseModal = () => {
@@ -55,7 +56,7 @@ export default function ReadingApp() {
           text={"VER SIGNIFICADO"}
           sourceIcon={"/assets/images/btn-icon-pink.svg"}
         />
-        <Modal isOpen={modalOpen} onClose={handleCloseModal}/>
+        <ModalDescription isOpen={modalOpen} onClose={handleCloseModal} pastCardPrediction={pastCardPrediction} presentCardPrediction={presentCardPrediction} futureCardPrediction={futureCardPrediction}/>
 
         <Button
           onClick={() => {

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import '../modal/styles.css'
+
 
 
 export default function ModalReading({reverse, cardData}) {

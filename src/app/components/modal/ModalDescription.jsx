@@ -1,32 +1,35 @@
 "use client";
 import Image from "next/image"
-import './styles.css'
-import { SakuraContext } from "@/app/context";
-import { useContext } from "react";
-import { useRouter } from "next/navigation";
+import styles from './styles.module.css'
+// import { SakuraContext } from "@/app/context";
+// import { useContext } from "react";
+// import { useRouter } from "next/navigation";
 
 import ModalReading from "../modalReading/ModalReading"
 
-export default function ModalDescription({ isOpen, onClose }) {
+export default function ModalDescription({ isOpen, onClose, pastCardPrediction, presentCardPrediction, futureCardPrediction }) {
 
-    const {
-        selectedItems,
-      } = useContext(SakuraContext);
+    // const {
+    //     selectedItems,
+    //   } = useContext(SakuraContext);
     
-      const pastCardPrediction = selectedItems.find(
-        (card)=> card.predictionTime === "pasado"
-      );
-      const presentCardPrediction = selectedItems.find(
-        (card)=> card.predictionTime === "present"
-      )
-      const futureCardPrediction = selectedItems.find(
-        (card)=> card.predictionTime === "futuro"
-      );
+    //   const pastCardPrediction = selectedItems.find(
+    //     (card)=> card.predictionTime === "pasado"
+    //   );
+    //   const presentCardPrediction = selectedItems.find(
+    //     (card)=> card.predictionTime === "present"
+    //   )
+    //   const futureCardPrediction = selectedItems.find(
+    //     (card)=> card.predictionTime === "futuro"
+    //   );
     
-      const router = useRouter();
+    //   const router = useRouter();
+      const modalDisplay = isOpen
+      ? `${styles.modalOverlay} ${styles.modalOpen}`
+      : styles.modalOverlay
 
     return (
-        <section onClick={onClose} className="relative flex items-center justify-center">
+        <section onClick={onClose} className={modalDisplay}>
             <Image
             src={"/assets/images/wings-left.png"}
             alt="Imagen del ala izquierdo"
