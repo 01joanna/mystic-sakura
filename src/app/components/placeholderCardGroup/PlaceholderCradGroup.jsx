@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import PlaceholderCard from "@/app/components/placeholderCard";
+import PlaceholderCard from "@/app/components/placeholderCard/PlaceholderCard";
 
 export default function PlaceholderCardGroup() {
   return (
@@ -12,22 +12,23 @@ export default function PlaceholderCardGroup() {
       <PlaceholderCard
         className={"past"}
         time={"PASADO"}
-        isClickable={false}
-        notChangeStyles={true}
         background={"bg-purpleDrak"}
         predictionTime="pasado"
+        showReveledBtn={false}
       />
       <PlaceholderCard
         className={"present"}
         time={"PRESENTE"}
         background={"bg-blueDark"}
         predictionTime="present"
+        showReveledBtn={false}
       />
       <PlaceholderCard
         className={"future"}
         time={"FUTURO"}
         background={"bg-blueLigth"}
         predictionTime="futuro"
+        showReveledBtn={false}
       />
     </section>
   );
