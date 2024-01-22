@@ -2,12 +2,13 @@
 import Kero from "@/app/components/animation/kero/Kero";
 import Button from "@/app/components/button/Button";
 import { SakuraContext } from "@/app/context";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { useRouter } from "next/navigation";
 import CardPrediction from "@/app/components/cardPredition/CardPredition";
 import Header from "@/app/components/header/Header";
 import styles from "@/app/reading/styles.module.css";
 import clsx from "clsx";
+import Modal from "../components/modal/Modal";
 
 export default function ReadingApp() {
   const {
@@ -26,6 +27,16 @@ export default function ReadingApp() {
 
   const router = useRouter();
 
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setModalOpen(false);
+  };
+
   return (
     <>
       <Header />
@@ -40,12 +51,11 @@ export default function ReadingApp() {
         )}>
 
         <Button
-          onClick={() => {
-            router.push("/src/app/components/modalInfo");
-          }}
+          onClick={handleOpenModal}
           text={"VER SIGNIFICADO"}
           sourceIcon={"/assets/images/btn-icon-pink.svg"}
         />
+        <Modal isOpen={modalOpen} onClose={handleCloseModal}/>
 
         <Button
           onClick={() => {

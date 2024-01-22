@@ -1,9 +1,30 @@
+"use client";
 import Image from "next/image"
 import './styles.css'
+import { SakuraContext } from "@/app/context";
+import { useContext } from "react";
+import { useRouter } from "next/navigation";
 
 import ModalReading from "../modalReading/ModalReading"
 
-export default function Modal({ children, onClose }) {
+export default function ModalDescription({ isOpen, onClose }) {
+
+    const {
+        selectedItems,
+      } = useContext(SakuraContext);
+    
+      const pastCardPrediction = selectedItems.find(
+        (card)=> card.predictionTime === "pasado"
+      );
+      const presentCardPrediction = selectedItems.find(
+        (card)=> card.predictionTime === "present"
+      )
+      const futureCardPrediction = selectedItems.find(
+        (card)=> card.predictionTime === "futuro"
+      );
+    
+      const router = useRouter();
+
     return (
         <section onClick={onClose} className="relative flex items-center justify-center">
             <Image
@@ -20,9 +41,9 @@ export default function Modal({ children, onClose }) {
           X
         </button>
                 <section className="flex flex-col w-full h-full lg:overflow-y-scroll items-center justify-center pt-8 lg:justify-start lg:gap-32 lg:py-10">
-                    <ModalReading />
-                    <ModalReading reverse />
-                    <ModalReading />
+                    <ModalReading cardData={pastCardPrediction}/>
+                    <ModalReading reverse cardData={presentCardPrediction}/>
+                    <ModalReading cardData={futureCardPrediction}/>
                 </section>
                 <Image src={"/assets/images/icon-arrow-down.svg"} alt="Icon scroll down" width={30} height={30} className={`hidden lg:flex absolute bottom-20`}/>
                 <Image src={"/assets/images/adorno-horizontal.png"} alt="Imagen de adorno horizontal, abajo" width={324} height={22} className={`${"horizontal-bottom"} mb-2 lg:w-[52.8rem] lg:h-[3.6rem] lg:mt-8`}/>
