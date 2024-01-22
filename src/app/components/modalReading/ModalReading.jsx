@@ -5,7 +5,7 @@ export default function ModalReading({reverse}) {
     const containerStyle = reverse ? "flex-row-reverse" : "flex-row";
 
     return (
-        <div className={`flex
+        <div className={`flex 
         w-[20rem] h-[14rem] lg:w-[41.4rem] lg:h-[23rem]`}>
         <section className={`${containerStyle} flex flex-row relative z-0`}>
             <figure>

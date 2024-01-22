@@ -3,9 +3,9 @@ import './styles.css'
 
 import ModalReading from "../modalReading/ModalReading"
 
-export default function Modal({ children }) {
+export default function Modal({ children, onClose }) {
     return (
-        <section className="relative flex items-center justify-center">
+        <section onClick={onClose} className="relative flex items-center justify-center">
             <Image
             src={"/assets/images/wings-left.png"}
             alt="Imagen del ala izquierdo"
@@ -16,7 +16,10 @@ export default function Modal({ children }) {
 
             <div className="bg-purpleDark h-full w-[21.4rem] flex flex-col justify-center items-center rounded-3xl lg:w-[53rem] lg:h-[40rem]">
                 <Image src={"/assets/images/adorno-horizontal.png"} alt="Imagen de adorno horizontal, arriba" width={324} height={22} className={`${"horizontal-top"} mt-2 lg:w-[52.8rem] lg:h-[3.6rem] lg:mb-8`}/>
-                <section className="flex flex-col w-full h-full lg:overflow-y-scroll items-center justify-center lg:justify-start lg:gap-32 lg:py-10">
+                <button className="text-yellowColor flex absolute top-8 right-4 lg:top-12 lg:right-12 text-xl lg:text-2xl" onClick={onClose}>
+          X
+        </button>
+                <section className="flex flex-col w-full h-full lg:overflow-y-scroll items-center justify-center pt-8 lg:justify-start lg:gap-32 lg:py-10">
                     <ModalReading />
                     <ModalReading reverse />
                     <ModalReading />
