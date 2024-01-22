@@ -1,4 +1,4 @@
-.starContainer {
+/* .starContainer {
     position: relative;
     width: 100vw;
     overflow: hidden;
@@ -10,5 +10,11 @@
     animation: none;
     opacity: 0.4;
     filter: grayscale(1);
-}
+} */
 
+/* .cartas_style {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color:aqua;
+  } */
