@@ -1,7 +1,6 @@
 "use client";
 import CardList from "@/app/components/cardList/CardList";
 import Kero from "@/app/components/animation/kero/Kero";
-import Star from "@/app/components/animation/star/Star";
 import PlaceholderCardGroup from "@/app/components/placeholderCardGroup/PlaceholderCradGroup";
 import ModalInfo from "@/app/components/modalInfo/ModalInfo";
 import Button from "@/app/components/button/Button";
@@ -10,6 +9,7 @@ import { DndProvider } from "react-dnd";
 import { SakuraContext } from "@/app/context";
 import { useContext } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 import Header from "@/app/components/header/Header";
 import styles from "@/app/home/styles.module.css";
 import clsx from "clsx";
@@ -24,7 +24,6 @@ export default function HomeApp() {
   const router = useRouter();
   return (
     <>
-      <Star />
       <Header />
       <Kero />
       <DndProvider backend={HTML5Backend}>
@@ -46,9 +45,20 @@ export default function HomeApp() {
           sourceIcon={"/assets/images/btn-icon-pink.svg"}
         />
       </div>
-      <div className="modalHome">
-        <ModalInfo isOpen={isOpenModal} onClose={handleCloseModal}>
-          Te excediste!!
+      <div className={styles.modalHome}>
+        <ModalInfo
+          isOpen={isOpenModal}
+          onClose={handleCloseModal}
+          className={styles.modalIncorrect}
+        >
+          <div className="flex justify-center items-center mt-4">
+            <Image
+              width={50}
+              height={50}
+              src={"/assets/images/bg-images/alert.png"}
+            />
+            <p> "Solo puedes elegir hasta tres cartas."</p>
+          </div>
         </ModalInfo>
       </div>
     </>

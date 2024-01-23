@@ -9,3 +9,8 @@
     opacity: 0.4;
     filter: grayscale(1);
 }
+
+.modalHome div:nth-child(1) div {
+    background: #b474f4;
+    color: white;
+}

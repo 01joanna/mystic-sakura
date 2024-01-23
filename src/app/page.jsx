@@ -1,11 +1,33 @@
+"use client";
 import Image from "next/image";
 import styles from "@/app/styles.module.css";
 import Flowers from "@/app/components/animation/flowers/Flowers";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 import Circles from "@/app/components/animation/circle/Circle";
+import clsx from "clsx";
 
 export default function AnimationPage() {
+  const router = useRouter();
+  const [isTransition, setIsTransition] = useState(false);
+
+  useEffect(() => {
+    const timeOut = setTimeout(() => {
+      setIsTransition(true);
+      setTimeout(() => {
+        router.push("/login-user");
+      }, 100);
+    }, 6000);
+    return () => clearTimeout(timeOut);
+  }, [router]);
+
   return (
-    <section className="flex justify-center overflow-hidden relative h-screen">
+    <section
+      className={clsx(
+        "flex justify-center overflow-hidden relative h-screen",
+        isTransition ? "transition-opacity duration-500 opacity-0" : ""
+      )}
+    >
       <div className={styles.containerLogo}>
         <Image
           width={70}
@@ -47,6 +69,9 @@ export default function AnimationPage() {
           </div>
         </div>
       </div>
+      <h1 className="text-yellowColor text-[2rem] absolute bottom-[9rem] font-jost tracking-[.07rem] sm:text-[2.5rem] md:text-[3rem] md:bottom-[7.5rem] min-[1400px]:text-[3.5rem] min-[1400px]:bottom-[6rem]">
+        Cargando...
+      </h1>
     </section>
   );
 }

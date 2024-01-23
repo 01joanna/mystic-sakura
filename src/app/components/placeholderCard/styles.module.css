@@ -51,7 +51,7 @@
     justify-content: center;
     gap: 2rem;
     border: 2px solid #cebc76;
-    box-shadow: 0px 0rem 1.4rem 0rem hsl(47.49deg 100% 75.77%);
+    box-shadow: 0px 0rem 1.6rem 0rem hsl(47.49deg 100% 75.77%);
     transform-origin: center center;
     animation: swing 2s ease infinite;
 }

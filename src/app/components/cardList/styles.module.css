@@ -42,13 +42,18 @@
 @media(min-width:1400px) {
     .sectionCards {
         margin-top: 4rem;
-        flex-direction: row;
-        align-items: normal;
-        height: 25rem;
+        height: 45rem;
     }
 }
 
 @media(min-width:1500px) {
+    .sectionCards {
+        margin-top: 4rem;
+        flex-direction: row;
+        align-items: normal;
+        height: 25rem;
+    }
+
     .cardContainer {
         height: auto;
         overflow-y: unset;
@@ -75,7 +80,7 @@
     .cardGrouptwo {
         flex-basis: 50%;
         justify-content: end;
-        left: 2.5rem;
+        left: -0.3rem;
     }
 }
 

@@ -304,3 +304,17 @@
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
+
+@media (min-width:1400px) {
+    .circle_A {
+        width: 35rem;
+        height: 35rem;
+    }
+}
+
+@media (min-width:1600px) {
+    .circle_A {
+        width: 42rem;
+        height: 42rem;
+    }
+}

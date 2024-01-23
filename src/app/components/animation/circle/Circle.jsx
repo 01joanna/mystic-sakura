@@ -6,10 +6,10 @@ export default function Circles() {
     <div
       className={clsx(
         styles.containerAnimationGeneral,
-        "absolute top-0 bottom-0 left-0 w-full"
+        "absolute bottom-0 left-0 w-full top-[15vh] lg:top-[20vh]"
       )}
     >
-      <div className={styles.containerLights}>
+      <div className={clsx(styles.containerLights, "lg:opacity-[0.5]")}>
         <div className={styles.lights}>
           <div className={styles.lightsA}></div>
           <div className={styles.lightsB}></div>
