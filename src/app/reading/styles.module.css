@@ -1,7 +1,21 @@
+.cardContainerOnly>div:nth-child(2) div {
+  flex-basis: 60%;
+}
 
- /* .cartas_style {
-    display: flex;
-    justify-content: center;
-    gap: 8rem;
-    background-color:rgb(255, 0, 0);
-  }  */
+@media(min-width:640px) {
+  .cardContainerOnly>div:nth-child(2) div {
+    flex-basis: unset;
+  }
+}
+
+@media(min-width:1400px) {
+  .cardContainerOnly>div:nth-child(2) div {
+    margin-left: 3rem;
+  }
+}
+
+@media(min-width:1600px) {
+  .cardContainerOnly>div:nth-child(2) div {
+    margin-left: 3rem;
+  }
+}

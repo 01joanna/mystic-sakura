@@ -1,5 +1,7 @@
 "use client";
 import { createContext, useState } from "react";
+import { HTML5Backend } from "react-dnd-html5-backend";
+import { DndProvider } from "react-dnd";
 
 export const SakuraContext = createContext([]);
 
@@ -35,7 +37,7 @@ export default function SakuraProvider({ children }) {
         isAllCardsRevealed,
       }}
     >
-      {children}
+      <DndProvider backend={HTML5Backend}>{children}</DndProvider>
     </SakuraContext.Provider>
   );
 }
