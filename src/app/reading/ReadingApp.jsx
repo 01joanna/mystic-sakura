@@ -2,13 +2,14 @@
 import Kero from "@/app/components/animation/kero/Kero";
 import Button from "@/app/components/button/Button";
 import { SakuraContext } from "@/app/context";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { useRouter } from "next/navigation";
 import CardPrediction from "@/app/components/cardPredition/CardPredition";
 import Header from "@/app/components/header/Header";
 import styles from "@/app/reading/styles.module.css";
 import Image from "next/image";
 import clsx from "clsx";
+import ModalDescription from "../components/modal/ModalDescription";
 
 export default function ReadingApp() {
   const { selectedItems, setSelectedItems } = useContext(SakuraContext);
@@ -24,6 +25,17 @@ export default function ReadingApp() {
   );
 
   const router = useRouter();
+
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setModalOpen(true);
+    console.log("click");
+  };
+
+  const handleCloseModal = () => {
+    setModalOpen(false);
+  };
 
   return (
     <>
@@ -69,15 +81,20 @@ export default function ReadingApp() {
         )}
       >
         <Button
-          onClick={() => {
-            router.push("/src/app/components/modalInfo");
-          }}
+          onClick={handleOpenModal}
           text={"VER SIGNIFICADO"}
           sourceIcon={"/assets/images/btn-icon-pink.svg"}
           className={clsx(
             selectedItems.length > 0 ? "block" : "hidden",
             "!text-[1.4rem] !pr-[5rem] !pl-[3rem] !flex-basis-[50%] sm:!text-[1.8rem] md:!text-[2.5rem] min-[1400px]:!pr-[6rem]"
           )}
+        />
+        <ModalDescription
+          isOpen={modalOpen}
+          onClose={handleCloseModal}
+          pastCardPrediction={pastCardPrediction}
+          presentCardPrediction={presentCardPrediction}
+          futureCardPrediction={futureCardPrediction}
         />
 
         <Button
