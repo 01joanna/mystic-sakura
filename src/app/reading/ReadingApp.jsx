@@ -30,10 +30,9 @@ export default function ReadingApp() {
     <>
       <Header />
       <Kero />
-      <div className="flex justify-center flex-col items-center">
-        <h1 className="text-yellowColor md:text-[2rem] pb-[2rem]">"Las cartas revelan un camino lleno de secretos. Tu futuro está escrito en símbolos mágicos."</h1>
-      <div className={clsx(
-        "flex lg:justify-center lg:items-center lg:gap-[8rem] h-[45rem] md:h-[5rem]"
+      <div className="flex flex-col justify-center -mt-12">
+        <div className={clsx(
+        "flex justify-center gap-28 flex-row pb-28"
         )}>     
         <CardPrediction cardData={pastCardPrediction} />
         <CardPrediction cardData={presentCardPrediction} />
@@ -42,7 +41,7 @@ export default function ReadingApp() {
     </div>  
 
     <div className={clsx(
-          "flex justify-center flex-col md:flex-row mx-[8rem] my-[8rem] gap-[8rem]"
+          "flex justify-center gap-60"
         )}>
 
         <Button
