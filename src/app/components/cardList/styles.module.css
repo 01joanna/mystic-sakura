@@ -1,0 +1,87 @@
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    height: 40rem;
+    margin: 0 auto;
+    gap: 12rem;
+    scroll-behavior: smooth;
+    scroll-snap-points-x: repeat(20%);
+    scroll-snap-stop: always;
+    scroll-snap-type: both mandatory;
+}
+
+.cardContainer::-webkit-scrollbar {
+    scroll-snap-type: x mandatory;
+    display: none;
+}
+
+
+.cardGroupOne {
+    left: -20%;
+    padding-top: 5rem;
+}
+
+.cardGrouptwo {
+    left: -22%;
+}
+
+
+.cardContainer>div:nth-child(2)>div {
+    border-right: 0.2rem inset #f4becb;
+    border-left: none;
+}
+
+@media(min-width:1200px) {
+    .cardContainer {
+        height: 41rem;
+    }
+}
+
+@media(min-width:1400px) {
+    .sectionCards {
+        margin-top: 4rem;
+        flex-direction: row;
+        align-items: normal;
+        height: 25rem;
+    }
+}
+
+@media(min-width:1500px) {
+    .cardContainer {
+        height: auto;
+        overflow-y: unset;
+        overflow-x: unset;
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: unset;
+        scroll-snap-type: none;
+        width: 95%;
+        padding-top: 4rem;
+    }
+
+    .scrollVector {
+        display: none;
+    }
+
+    .cardGroupOne {
+        flex-basis: 50%;
+        left: -2rem;
+        padding-top: 0;
+        left: -2.5rem;
+    }
+
+    .cardGrouptwo {
+        flex-basis: 50%;
+        justify-content: end;
+        left: 2.5rem;
+    }
+}
+
+@media(min-width:1600px) {
+    .sectionCards {
+
+        height: 30rem;
+    }
+}
