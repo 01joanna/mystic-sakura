@@ -9,7 +9,7 @@ import Header from "@/app/components/header/Header";
 import styles from "@/app/reading/styles.module.css";
 import Image from "next/image";
 import clsx from "clsx";
-import ModalDescription from "../components/modal/ModalDescription";
+import ModalDescription from "@/app/components/modal/ModalDescription";
 
 export default function ReadingApp() {
   const { selectedItems, setSelectedItems } = useContext(SakuraContext);
