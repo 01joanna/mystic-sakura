@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 export default function Header() {
   return (
     <div className="flex pt-[6rem] px-[3rem] flex-col justify-center gap-8 md:flex-row md:justify-between md:items-center lg:justify-between lg:px-[4rem] lg:pt-[3rem]">
@@ -16,9 +17,12 @@ export default function Header() {
           src={"/assets/images/icon-user.svg"}
           alt="icon usuario mistic shakura"
         />
-        <p className="text-[1.8rem] text-[#dec9f3] font-showcard inline-block">
-          Hola, Sakura
-        </p>
+        <Link
+          href={"/user-area"}
+          className="text-[1.5rem] text-[#dec9f3] font-showcard inline-block lg:text-[2rem]"
+        >
+          Historial de jugadas
+        </Link>
       </button>
     </div>
   );
