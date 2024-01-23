@@ -30,13 +30,19 @@ export default function ReadingApp() {
     <>
       <Header />
       <Kero />
-      <div className={clsx("cartas_style", styles["reading-page"])}>     
-       <CardPrediction cardData={pastCardPrediction} />
-       <CardPrediction cardData={presentCardPrediction} />
-       <CardPrediction cardData={futureCardPrediction} />
-    </div>
+      <div className="flex justify-center flex-col items-center">
+        <h1 className="text-yellowColor md:text-[2rem] pb-[2rem]">"Las cartas revelan un camino lleno de secretos. Tu futuro está escrito en símbolos mágicos."</h1>
+      <div className={clsx(
+        "flex lg:justify-center lg:items-center lg:gap-[8rem] h-[45rem] md:h-[5rem]"
+        )}>     
+        <CardPrediction cardData={pastCardPrediction} />
+        <CardPrediction cardData={presentCardPrediction} />
+        <CardPrediction cardData={futureCardPrediction} />
+      </div>
+    </div>  
+
     <div className={clsx(
-          "flex justify-center px-[8rem] mt-[8rem] mb-[6rem] lg:mt-[11rem] lg:mb-[8rem] min-[1400px]:gap-[8.15rem]   min-[1400px]:mt-[19rem]  min-[1400px]:m-b[4rem] min-[1600px]:mt-[4rem]"
+          "flex justify-center flex-col md:flex-row mx-[8rem] my-[8rem] gap-[8rem]"
         )}>
 
         <Button
