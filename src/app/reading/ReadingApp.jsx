@@ -15,13 +15,13 @@ export default function ReadingApp() {
   } = useContext(SakuraContext);
 
   const pastCardPrediction = selectedItems.find(
-    (card)=> card.predictionTime === "pasado"
+    (card)=> card.predictionTime === "Pasado"
   );
   const presentCardPrediction = selectedItems.find(
-    (card)=> card.predictionTime === "present"
+    (card)=> card.predictionTime === "Presente"
   )
   const futureCardPrediction = selectedItems.find(
-    (card)=> card.predictionTime === "futuro"
+    (card)=> card.predictionTime === "Futuro"
   );
 
   const router = useRouter();
@@ -30,18 +30,20 @@ export default function ReadingApp() {
     <>
       <Header />
       <Kero />
-      <div className="flex flex-col justify-center -mt-12">
+      <div className="flex flex-col justify-center  lg:-mt-12  items-center">
         <div className={clsx(
-        "flex justify-center gap-28 flex-row pb-28"
+        "flex justify-center lg:gap-28 lg:flex-row flex-col lg:pb-28 lg:gap-40 gap-10"
         )}>     
-        <CardPrediction cardData={pastCardPrediction} />
-        <CardPrediction cardData={presentCardPrediction} />
-        <CardPrediction cardData={futureCardPrediction} />
+        <div className="flex flex-row gap-20 lg:gap-40">
+          <CardPrediction cardData={pastCardPrediction} />
+          <CardPrediction cardData={presentCardPrediction} />
+        </div>
+       <div className="flex justify-center"><CardPrediction cardData={futureCardPrediction} /></div>
       </div>
     </div>  
 
     <div className={clsx(
-          "flex justify-center gap-60"
+          "flex justify-center lg:gap-60 flex-col lg:flex-row gap-10 py-14 px-28 rounded-lg"
         )}>
 
         <Button

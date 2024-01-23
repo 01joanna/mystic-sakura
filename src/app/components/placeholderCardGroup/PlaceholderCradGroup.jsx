@@ -13,21 +13,21 @@ export default function PlaceholderCardGroup() {
         className={"past"}
         time={"PASADO"}
         background={"bg-purpleDrak"}
-        predictionTime="pasado"
+        predictionTime="Pasado"
         showReveledBtn={false}
       />
       <PlaceholderCard
         className={"present"}
         time={"PRESENTE"}
         background={"bg-blueDark"}
-        predictionTime="present"
+        predictionTime="Presente"
         showReveledBtn={false}
       />
       <PlaceholderCard
         className={"future"}
         time={"FUTURO"}
         background={"bg-blueLigth"}
-        predictionTime="futuro"
+        predictionTime="Futuro"
         showReveledBtn={false}
       />
     </section>
