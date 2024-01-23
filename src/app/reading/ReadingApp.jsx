@@ -6,7 +6,6 @@ import { useContext, useState } from "react";
 import { useRouter } from "next/navigation";
 import CardPrediction from "@/app/components/cardPredition/CardPredition";
 import Header from "@/app/components/header/Header";
-import styles from "@/app/reading/styles.module.css";
 import clsx from "clsx";
 import ModalDescription from "../components/modal/ModalDescription";
 
@@ -44,26 +43,27 @@ export default function ReadingApp() {
       <Kero />
       <div className="flex flex-col justify-center  lg:-mt-12  items-center">
         <div className={clsx(
-        "flex justify-center lg:gap-28 lg:flex-row flex-col lg:pb-28 lg:gap-40 gap-10"
-        )}>     
-        <div className="flex flex-row gap-20 lg:gap-40">
-          <CardPrediction cardData={pastCardPrediction} />
-          <CardPrediction cardData={presentCardPrediction} />
-        </div>
-       <div className="flex justify-center"><CardPrediction cardData={futureCardPrediction} /></div>
-      </div>
-    </div>  
-
-    <div className={clsx(
-          "flex justify-center lg:gap-60 flex-col lg:flex-row gap-10 py-14 px-28 rounded-lg"
+          "flex justify-center lg:flex-row flex-col lg:pb-20 lg:gap-40 gap-10"
         )}>
+          <div className="flex flex-row gap-20 lg:gap-40">
+            <CardPrediction cardData={pastCardPrediction} />
+            <CardPrediction cardData={presentCardPrediction} />
+          </div>
+          <CardPrediction cardData={futureCardPrediction} className="flex justify-center"/>
+        </div>
+      </div>
+
+      <div className={clsx(
+        "flex justify-center lg:gap-60 flex-col lg:flex-row gap-10 py-14 px-28 rounded-lg"
+      )}>
 
         <Button
           onClick={handleOpenModal}
           text={"VER SIGNIFICADO"}
           sourceIcon={"/assets/images/btn-icon-pink.svg"}
         />
-        <ModalDescription isOpen={modalOpen} onClose={handleCloseModal} pastCardPrediction={pastCardPrediction} presentCardPrediction={presentCardPrediction} futureCardPrediction={futureCardPrediction}/>
+        <ModalDescription isOpen={modalOpen} onClose={handleCloseModal} pastCardPrediction={pastCardPrediction} presentCardPrediction={presentCardPrediction} futureCardPrediction={futureCardPrediction} />
+
 
         <Button
           onClick={() => {
@@ -76,8 +76,3 @@ export default function ReadingApp() {
     </>
   );
 }
-
-
-
-
-
