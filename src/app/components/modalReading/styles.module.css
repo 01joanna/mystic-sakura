@@ -1,0 +1,59 @@
+.containerCardSakura {
+    width: 7rem;
+    padding: 3px;
+    position: relative;
+    border-radius: 6px;
+    color: rgb(88 199 250 / 0%);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset, rgb(28 28 77 / 99%) 0px 0px 4px 0px, rgb(0 0 0 / 76%) -2px 0px 5px 1px;
+}
+
+
+.containerCardSakura::before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 2px;
+    background-image: linear-gradient(132deg, #5b0094, #752687 43%, #54106e);
+    position: absolute;
+    top: -1%;
+    left: -2%;
+}
+
+.containerCardSakura::after {
+    position: absolute;
+    content: "";
+    top: 0%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 100%;
+    filter: blur(calc(30vh/6));
+    background-image: linear-gradient(132deg, #60239e, #721c80 43%, #6d137c);
+    animation: styles_spin__NQlgj 2.5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg) scale(0.8);
+
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1);
+        ;
+    }
+}
+
+@media(min-width:1024px) {
+    .containerCardSakura {
+        width: 30%;
+    }
+}
+
+@media(min-width:1600px) {
+    .containerCardSakura {
+        width: 28%;
+    }
+}
