@@ -6,7 +6,12 @@ import { SakuraContext } from "@/app/context";
 import { useContext, useState } from "react";
 import clsx from "clsx";
 
-export default function PlaceholderCard({ predictionTime, time, background }) {
+export default function PlaceholderCard({
+  predictionTime,
+  time,
+  background,
+  showReveledBtn,
+}) {
   const [currentCard, setCurrentCard] = useState(null);
   const [isDropEnabled, setIsDropEnable] = useState(true);
   // estado para revelar
@@ -74,7 +79,7 @@ export default function PlaceholderCard({ predictionTime, time, background }) {
       <p
         className={clsx(
           currentCard ? "block" : "hidden",
-          "text-yellowColor text-center font-showcard text-[1.4rem] tracking-[.07rem] mb-10 w-[10rem] md:w-[18rem] md:text-[1.7rem] xl:w-[15rem] xl:text-[1.5rem] 2xl:w-[18rem] 2xl:text-[2rem]"
+          "text-yellowColor text-center font-showcard text-[1.4rem] tracking-[.07rem] mb-10 w-[10rem] md:w-[18rem] md:text-[1.7rem] xl:w-[15rem] xl:text-[1.5rem] xl:mb-[1.5rem] 2xl:w-[15rem] 2xl:text-[1.5rem]"
         )}
       >
         {renderRevealText
@@ -93,14 +98,15 @@ export default function PlaceholderCard({ predictionTime, time, background }) {
           reveal ? styles.animationRevel : "",
           backgroundClass,
           "w-[94px] rounded-lg m-1 lg:w-[151px] h-[209px] md:w-[150px] md:h-[340px] lg:h-[341px]",
-          "min-[1400px]:w-[160px] min-[1400px]:h-[360px]",
+          "min-[1400px]:w-[130px] min-[1400px]:h-[295px]",
+          "min-[1600px]:w-[155px] min-[1600px]:h-[352px]",
           currentCard ? "min-[1400px]:p-[0rem]" : "min-[1400px]:p-[0.8rem]"
         )}
         style={{
           backgroundImage: currentCard ? `url(${renderImageCard})` : "none",
         }}
       >
-        {renderRevealText && (
+        {renderRevealText && showReveledBtn && (
           <button
             className={clsx(
               styles.btnRevelar,
@@ -144,7 +150,7 @@ export default function PlaceholderCard({ predictionTime, time, background }) {
             <p className="text-yellowColor text-[12px] md:text-[1.2rem] lg:text-[1.5rem] lg:pt-[0.5rem] text-center font-jost w-3/4 pt-0.5 tracking-[.07rem] min-[1400px]:text-[1.5rem] ">
               Elige una carta
             </p>
-            <h3 className="text-yellowColor text-[1.4rem] md:text-[2.2rem] lg:pt-[0.5rem] text-center font-showcard  min-[1400px]:text-[2.5rem] ">
+            <h3 className="text-yellowColor text-[1.4rem] md:text-[2.2rem] lg:pt-[0.5rem] text-center font-showcard  min-[1400px]:text-[2rem] ">
               {time}
             </h3>
           </div>

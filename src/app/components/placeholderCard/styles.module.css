@@ -87,15 +87,6 @@
     }
 }
 
-.btnRevelar {
-    background: #c992ff;
-    color: #633c89;
-    cursor: pointer;
-    font-weight: bold;
-    box-shadow: 1px -1px 10px 2px #c992ff;
-    filter: drop-shadow(0px -1px 1px rgba(0, 0, 0, 0.5));
-}
-
 @keyframes wobble {
     0% {
         transform: translateX(0%);
@@ -126,13 +117,6 @@
     }
 }
 
-.btnRevelar:hover {
-    background: #633c89;
-    color: #c992ff;
-    transition: ease all 0.8s;
-    animation: wobble 2s ease infinite;
-}
-
 .btnCambiar:hover {
     transition: ease all 0.8s;
     animation: wobble 2s ease infinite;
@@ -142,7 +126,7 @@
 
 .btnCambiar {
     background: #633c89;
-    color: #c992ff;
+    color: #ddbbff;
     cursor: pointer;
     font-weight: bold;
     box-shadow: 1px -1px 7px 3px #633c89;
