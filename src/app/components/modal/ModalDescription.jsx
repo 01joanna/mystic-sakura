@@ -20,12 +20,12 @@ export default function ModalDescription({ isOpen, onClose, pastCardPrediction, 
             className="flex-none relative left-28 bottom-20 z-10 hidden lg:flex"
             />
 
-            <div className="bg-purpleDark w-[21.4rem] flex flex-col justify-center items-center rounded-3xl lg:w-[53rem] lg:h-[40rem]">
+            <div className="bg-purpleDark w-[30rem] flex flex-col justify-center items-center rounded-3xl lg:w-[53rem] lg:h-[40rem]">
                 <Image src={"/assets/images/adorno-horizontal.png"} alt="Imagen de adorno horizontal, arriba" width={324} height={22} className={`${"horizontal-top"} mt-2 lg:w-[52.8rem] lg:h-[3.6rem]`}/>
-                <button className="text-yellowColor flex relative top-0 left-36 lg:top-0 lg:left-[22rem] text-xl lg:text-2xl" onClick={onClose}>
+                <button className="text-yellowColor flex relative top-0 left-[13.5rem] lg:top-0 lg:left-[22rem] text-xl lg:text-2xl" onClick={onClose}>
           X
         </button>
-                <section className={`${styles.scrollbar} flex flex-col w-full h-full lg:overflow-y-scroll items-center justify-center p-8 lg:justify-start lg:gap-32 gap-12 lg:py-4`}>
+                <section className={`${styles.scrollbar} flex flex-col w-full h-full lg:overflow-y-scroll items-center justify-center p-4 ml-4 lg:justify-start lg:gap-32 gap-4 lg:py-4`}>
                     <ModalReading cardData={pastCardPrediction}/>
                     <ModalReading reverse cardData={presentCardPrediction}/>
                     <ModalReading cardData={futureCardPrediction}/>
