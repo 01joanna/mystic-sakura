@@ -2,6 +2,7 @@
 import Image from "next/image";
 import styles from "@/app/styles.module.css";
 import Flowers from "@/app/components/animation/flowers/Flowers";
+import Star from "./components/animation/star/Star";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import Circles from "@/app/components/animation/circle/Circle";
@@ -17,7 +18,7 @@ export default function AnimationPage() {
       setTimeout(() => {
         router.push("/login-user");
       }, 100);
-    }, 6000);
+    }, 8000);
     return () => clearTimeout(timeOut);
   }, [router]);
 
@@ -44,6 +45,7 @@ export default function AnimationPage() {
           className={styles.wingTwo}
         />
       </div>
+      <Star />
       <Flowers />
       <Circles />
       <div className={styles.animation}>
