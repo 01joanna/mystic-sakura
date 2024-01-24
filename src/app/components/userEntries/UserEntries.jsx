@@ -2,9 +2,9 @@ import UserEntry from "../userEntry/UserEntry";
 
 export default function UserEntries() {
     return (
-        <div>
-            <table className="text-yellowColor">
-                <thead>
+        <div className="flex justify-center w-[33rem] border-2 border-blue-600">
+            <table className=" w-full">
+                <thead className="font-showcard text-xl text-yellowColor">
                     <tr>
                         <th> </th>
                         <th>Fecha</th>
@@ -13,7 +13,7 @@ export default function UserEntries() {
                         <th> </th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody className="font-jost text-sm text-white">
                     <UserEntry />
                 </tbody>
             </table>
