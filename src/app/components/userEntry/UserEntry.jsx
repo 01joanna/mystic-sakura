@@ -1,62 +1,63 @@
 import Image from 'next/image'
-// import './styles.module.css'
 
 export default function UserEntry() {
     return (
-                    <tr className='text-center'>
-                        <td>
-                            <Image
-                                src={"/assets/images/user-icons/kero-face.png"}
-                                alt="Icono de Kero para plantilla de usuario"
-                                width={15}
-                                height={15}
 
-
-                            />
-                        </td>
-                        <td className='text-center'>
-                            <p>
-                            09/08/23
-                            </p>
-                        </td>
-                        <td className='grow text-center border-2 border-blue-600 h-full'>
-                            <p className='w-3/5'>
-                                Nombre
-                            </p>
-                            <button className='w-2/5 ml-2'>
-                            <Image
-                                src={"/assets/images/user-icons/pencil-icon.png"}
-                                alt="Icono de editar para plantilla de usuario"
-                                width={15}
-                                height={15}
-                            />
-                            </button>
-                        </td>
-                        <td className='grow text-center h-full'>
-                            <p className='w-3/5'>
-                                Burbujas/Laberinto/Salto
-                            </p>
-                            <button className='w-2/5 ml-2'>
-                                <Image
-                                src={"/assets/images/user-icons/eye-icon.png"}
-                                alt="Icono de editar para plantilla de usuario"
-                                width={15}
-                                height={15}
-                            />
-                            </button>
-                            
-                        </td>
-                        <td className='text-center'>
-                            <button>
-                                <Image
-                                    src={"/assets/images/user-icons/trash-icon.png"}
-                                    alt="Icono borrador para plantilla de usuario"
-                                    width={15}
-                                    height={15}
-                                />
-                            </button>
-                        </td>
-                    </tr>
+        <tr className='text-center h-[6rem] border-b-2 border-pink-800'>
+            <td>
+                <div className='flex justify-center'>
+                    <Image
+                        src={"/assets/images/kero-icon.svg"}
+                        alt="Icono de Kero para plantilla de usuario"
+                        width={15}
+                        height={15}
+                        className='lg:w-[3rem]'
+                    />
+                </div>
+            </td>
+            <td className="w-[6rem] lg:w-[8rem]">
+                09/08/23
+            </td>
+            <td className="textwrap w-[6rem] pl-2 lg:w-[10rem] ">
+                Nombre
+            </td>
+            <td>
+                <button className=''>
+                    <Image
+                        src={"/assets/images/user-icons/pencil-icon.svg"}
+                        alt="Icono de editar para plantilla de usuario"
+                        width={15}
+                        height={15}
+                        className='lg:w-[2.5rem]'
+                    />
+                </button>
+            </td>
+            <td className="textwrap w-[5.6rem] pl-2 lg:w-[10rem] ">
+                Burbujas Laberinto Salto
+            </td>
+            <td>
+                <button>
+                    <Image
+                        src={"/assets/images/user-icons/eye-icon.svg"}
+                        alt="Icono de editar para plantilla de usuario"
+                        width={15}
+                        height={15}
+                        className='lg:w-[2.5rem]'
+                    />
+                </button>
+            </td>
+            <td>
+                <button>
+                    <Image
+                        src={"/assets/images/user-icons/trash-icon.svg"}
+                        alt="Icono borrador para plantilla de usuario"
+                        width={15}
+                        height={15}
+                        className='lg:w-[2.5rem]'
+                    />
+                </button>
+            </td>
+        </tr>
     )
 }
 
