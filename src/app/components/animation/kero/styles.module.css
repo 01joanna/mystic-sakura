@@ -96,6 +96,17 @@
     }
 }
 
+@media(min-width:1024px) {
+    .modalDesing {
+        background-image: url(/assets/images/modal-vertical-1.png),
+            url(/assets/images/modal-vertical-1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left 2rem top, right 2rem top;
+        ;
+    }
+}
+
 @media(min-width:1400px) {
     .kero {
 

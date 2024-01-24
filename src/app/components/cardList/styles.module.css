@@ -51,7 +51,7 @@
         margin-top: 4rem;
         flex-direction: row;
         align-items: normal;
-        height: 25rem;
+        height: 22rem;
     }
 
     .cardContainer {
@@ -63,7 +63,6 @@
         gap: unset;
         scroll-snap-type: none;
         width: 95%;
-        padding-top: 4rem;
     }
 
     .scrollVector {
@@ -88,5 +87,9 @@
     .sectionCards {
 
         height: 30rem;
+    }
+
+    .sectionCards {
+        margin-top: 6rem;
     }
 }
