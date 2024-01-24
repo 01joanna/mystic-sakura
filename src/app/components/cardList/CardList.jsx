@@ -4,7 +4,7 @@ import styles from "@/app/components/cardList/styles.module.css";
 import Card from "@/app/components/card/Card";
 import clsx from "clsx";
 import Image from "next/image";
-import fetchTarotCards from "@/services/tarotService";
+import fetchTarotCards from "@/app/services/tarotService";
 
 export default function CardList() {
   const [cards, setCards] = useState([]);
