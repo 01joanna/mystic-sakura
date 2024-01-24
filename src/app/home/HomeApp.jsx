@@ -41,6 +41,7 @@ export default function HomeApp() {
           }}
           text={"Lectura"}
           sourceIcon={"/assets/images/btn-icon-pink.svg"}
+          data-testid={"btnReading"}
         />
       </div>
       <div className={styles.modalHome}>
@@ -49,11 +50,12 @@ export default function HomeApp() {
           onClose={handleCloseModal}
           className={styles.modalIncorrect}
         >
-          <div className="flex justify-center items-center mt-4">
+          <div className="w-full flex justify-center items-center mt-4">
             <Image
               width={50}
               height={50}
               src={"/assets/images/bg-images/alert.png"}
+              className={"min-[1400px]:w-[8rem]"}
             />
             <p> "Solo puedes elegir hasta tres cartas."</p>
           </div>
