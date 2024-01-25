@@ -1,3 +1,10 @@
+"use client"
+import ModalUser from "../components/modalUser/ModalUser";
+
 export default function UserArea() {
-  return <h1 className="text-white text-[5rem]">area de usuario</h1>;
+  return (
+    <div className="flex justify-center items-center">
+      <ModalUser/>
+    </div>
+  );
 }
