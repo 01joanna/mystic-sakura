@@ -1,10 +1,10 @@
 "use client"
-import UserEntries from "../components/userEntries/userEntries";
+import ModalUser from "../components/modalUser/ModalUser";
 
 export default function UserArea() {
   return (
-    <div>
-      <UserEntries/>
+    <div className="flex justify-center items-center">
+      <ModalUser/>
     </div>
   );
 }

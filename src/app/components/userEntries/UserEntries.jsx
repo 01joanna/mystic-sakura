@@ -16,6 +16,10 @@ export default function UserEntries() {
                 <tbody className="font-jost text-sm lg:text-xl text-white divide-y divide-pink-800">
                     <UserEntry />
                     <UserEntry />
+                    <UserEntry />
+                    <UserEntry />
+                    <UserEntry />
+                    <UserEntry />
                 </tbody>
             </table>
         </div>
