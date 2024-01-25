@@ -3,7 +3,7 @@ import Image from "next/image"
 import styles from '../modal/styles.module.css'
 import UserEntries from "../userEntries/UserEntries";
 
-export default function ModalUser() {
+export default function UserTable() {
 
     return (
         <section>
