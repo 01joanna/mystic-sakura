@@ -4,10 +4,10 @@ import Kero from "@/app/components/animation/kero/Kero";
 import PlaceholderCardGroup from "@/app/components/placeholderCardGroup/PlaceholderCradGroup";
 import ModalInfo from "@/app/components/modalInfo/ModalInfo";
 import Button from "@/app/components/button/Button";
-
 import { SakuraContext } from "@/app/context";
 import { useContext } from "react";
 import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 import Image from "next/image";
 import Header from "@/app/components/header/Header";
 import styles from "@/app/home/styles.module.css";
@@ -18,14 +18,20 @@ export default function HomeApp() {
     isAllCardsRevealed,
     isOpenModal,
     handleCloseModal,
+    selectedItems,
+    setSelectedItems,
     selectedItemsLength,
   } = useContext(SakuraContext);
+
+  useEffect(() => {
+    setSelectedItems([]);
+  }, []);
+
   const router = useRouter();
   return (
     <>
       <Header />
       <Kero />
-
       <PlaceholderCardGroup />
       <CardList />
       <div
