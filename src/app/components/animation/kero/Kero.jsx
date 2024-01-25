@@ -1,19 +1,28 @@
 "use client";
 import Image from "next/image";
 import clsx from "clsx";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "@/app/components/animation/kero/styles.module.css";
 import ModalInfo from "@/app/components/modalInfo/ModalInfo";
 export default function Kero() {
-  const [modalOpen, setModalOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
+  useEffect(() => {
+    const hasModalBeenShown = localStorage.getItem("hasModalBeenShown");
+
+    if (!hasModalBeenShown) {
+      setShowModal(true);
+      localStorage.setItem("hasModalBeenShown", "true");
+    }
+  }, []);
   const handleOpenModal = () => {
-    setModalOpen(true);
+    setShowModal(true);
   };
 
   const handleCloseModal = () => {
-    setModalOpen(false);
+    setShowModal(false);
   };
+
   return (
     <>
       <div
@@ -53,7 +62,7 @@ export default function Kero() {
           <div className={clsx(styles.info)}></div>
         </button>
         <ModalInfo
-          isOpen={modalOpen}
+          isOpen={showModal}
           onClose={handleCloseModal}
           className={styles.modalInfo}
         >

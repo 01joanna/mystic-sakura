@@ -1,11 +1,11 @@
-import React from "react";
-import { wrapInTestContext } from "react-dnd-test-utils";
 import "@testing-library/jest-dom";
 import { getByTestId, render, screen, waitFor } from "@testing-library/react";
+import React from "react";
+import { wrapInTestContext } from "react-dnd-test-utils";
 import userEvent from "@testing-library/user-event";
 
 import Card from "../Card";
-import SakuraProvider from "@/app/context";
+import SakuraProvider from "../../../context/index.jsx";
 
 const sakuraMock = {
   id: "55",
