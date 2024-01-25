@@ -1,5 +1,5 @@
-import styles from "./styles.module.css"; // Agrega tu archivo de estilos del modal
-
+import clsx from "clsx";
+import styles from "./styles.module.css";
 const Modal = ({ isOpen, onClose, children }) => {
   const modalClassName = isOpen
     ? `${styles.modalOverlay} ${styles.modalOpen}`
@@ -7,7 +7,13 @@ const Modal = ({ isOpen, onClose, children }) => {
 
   return (
     <div className={modalClassName} onClick={onClose}>
-      <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
+      <div
+        className={clsx(
+          styles.modalContent,
+          "relative text-[1.1rem] md:text-[1.5rem]"
+        )}
+        onClick={(e) => e.stopPropagation()}
+      >
         <button className={styles.closeButton} onClick={onClose}>
           X
         </button>

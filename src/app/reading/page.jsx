@@ -1,4 +1,4 @@
-import ReadingApp from "./ReadingApp"
+import ReadingApp from "./ReadingApp";
 import styles from "@/app/reading/styles.module.css";
 
 export const metadata = {

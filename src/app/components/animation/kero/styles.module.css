@@ -71,12 +71,12 @@
 }
 
 .info {
-    background-image: url(/assets/images/kero/carta-info.png);
+    background-image: url(/assets/images/kero/carta-info-3.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 4rem;
-    height: 8rem;
+    width: 6rem;
+    height: 10em;
     animation: float 4s linear infinite;
 }
 

@@ -75,7 +75,7 @@ export default function PlaceholderCard({
     : background;
 
   return (
-    <div className="text-center">
+    <div className="text-center" data-testid={`placeholder${time}`}>
       <p
         className={clsx(
           currentCard ? "block" : "hidden",
@@ -124,10 +124,19 @@ export default function PlaceholderCard({
             onClick={handleEdit}
             className={clsx(
               styles.btnCambiar,
-              "bg- p-4 font-showcard tracking-[0.1rem] text-[1.4rem] lg:text-[1.8rem]"
+              " relative bg- p-4 font-showcard tracking-[0.2rem] text-[1.4rem] lg:text-[1.5rem]"
             )}
             name="delete"
           >
+            <div className={clsx(styles.iconTriangle, "hidden lg:block")}>
+              <Image
+                src={"/assets/images/triangle.png"}
+                alt="triangulo magic"
+                width={30}
+                height={30}
+                className={clsx(styles.triangle)}
+              />
+            </div>
             CAMBIAR
           </button>
         )}

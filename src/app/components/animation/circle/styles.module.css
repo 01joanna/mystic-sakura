@@ -1,0 +1,320 @@
+.circle_all {
+    height: 28rem;
+    position: absolute;
+    top: 35rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.circle_A {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    width: 28rem;
+    height: 28rem;
+    border-radius: 50%;
+    background-image: url(/assets/images/bg-images/symbolBg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: circle-rotate 20s linear infinite;
+}
+
+.circle_B {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #debf6094;
+    opacity: 0.7;
+    z-index: 998;
+    animation-name: fadeOut_B;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.circle_C {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #debf606e;
+    opacity: 0.5;
+    z-index: 997;
+    animation-name: fadeOut_C;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.circle_D {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #debf6073;
+    opacity: 0.3;
+    z-index: 996;
+    animation-name: fadeOut_D;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.circle_E {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #debf6066;
+    opacity: 0.1;
+    z-index: 995;
+    animation-name: fadeOut_E;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fadeOut_B {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@keyframes fadeOut_C {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes fadeOut_D {
+    0% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 0;
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@keyframes fadeOut_E {
+    0% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 0;
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@keyframes circle-rotate {
+    from {
+        transform: translate(-50%, 50%)rotate(-45deg);
+    }
+
+    to {
+        transform: translate(-50%, 50%) rotate(-405deg);
+    }
+}
+
+.containerLights {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.lights {
+    width: 100%;
+    position: relative;
+    animation-name: lightsP;
+    animation-duration: 9s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+    transform-origin: center center;
+}
+
+@keyframes lightsP {
+    0% {
+        transform: scale(0.5);
+    }
+
+    20% {
+        transform: scale(0.4);
+    }
+
+    40% {
+        transform: scale(1);
+    }
+
+    70% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.lightsA {
+    transform: rotate(0deg);
+    animation-name: rotateIt;
+    animation-duration: 21s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+}
+
+@keyframes rotateIt {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.lightsA::before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 100%;
+    background: url(/assets/images/bg-images/lights-1.png-webp) no-repeat scroll rgba(0, 0, 0, 0);
+    background-size: cover;
+    background-position: center;
+    animation-name: lightsOp;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+}
+
+@keyframes lightsOp {
+    0% {
+        opacity: .5;
+    }
+
+    15% {
+        opacity: .4;
+    }
+
+    25% {
+        opacity: .45;
+    }
+
+    30% {
+        opacity: .6;
+    }
+
+    60% {
+        opacity: .55;
+    }
+
+    75% {
+        opacity: .35;
+    }
+
+    90% {
+        opacity: .6;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
+.lightsB {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(0deg);
+    animation-name: rotateIt;
+    animation-duration: 33s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-delay: 0;
+}
+
+.lightsB::before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 100%;
+    background: url(https://tarotoo.com/wp-content/themes/tarotootheme/assets/images/lights-2.png.webp) no-repeat scroll rgba(0, 0, 0, 0);
+    background-size: cover;
+    background-position: center;
+    animation-name: lightsOp;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@media (min-width:1400px) {
+    .circle_A {
+        width: 35rem;
+        height: 35rem;
+    }
+}
+
+@media (min-width:1600px) {
+    .circle_A {
+        width: 42rem;
+        height: 42rem;
+    }
+}

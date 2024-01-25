@@ -51,7 +51,7 @@
     justify-content: center;
     gap: 2rem;
     border: 2px solid #cebc76;
-    box-shadow: 0px 0rem 1.4rem 0rem hsl(47.49deg 100% 75.77%);
+    box-shadow: 0px 0rem 1.6rem 0rem hsl(47.49deg 100% 75.77%);
     transform-origin: center center;
     animation: swing 2s ease infinite;
 }
@@ -124,12 +124,62 @@
     color: #633c89;
 }
 
+.iconTriangle {
+
+    width: 2rem;
+    height: 2rem;
+    border: 3px solid #d2a17d;
+    border-radius: 50%;
+}
+
+.iconTriangle::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    width: 10%;
+    height: 1px;
+    background-color: #d2a17d;
+    animation-name: triangleLine;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.4, 0.1, 0, 1);
+}
+
+@keyframes triangleLine {
+
+    0%,
+    100% {
+        transform-origin: center left;
+        transform: scale(0, 1);
+    }
+
+    25% {
+        transform-origin: center left;
+        transform: scale(1, 1);
+    }
+
+    26% {
+        transform-origin: center right;
+    }
+
+    50% {
+        transform-origin: center right;
+        transform: scale(0, 1);
+    }
+}
+
 .btnCambiar {
-    background: #633c89;
+    background: #7b47c9;
     color: #ddbbff;
     cursor: pointer;
     font-weight: bold;
-    box-shadow: 1px -1px 7px 3px #633c89;
+    box-shadow: 1px -1px 7px 3px #7b47c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .animationRevel {

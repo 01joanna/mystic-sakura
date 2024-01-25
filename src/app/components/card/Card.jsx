@@ -42,12 +42,13 @@ export default function Card({ url, id, name }) {
     calculateTranslateValues(id, itsHover);
   let translateYOnHover = itsHover ? -3 : 0;
 
-//   translateYOnHover = itsHover ? translateYOnHover + 0.2 : translateValueY;
+  //   translateYOnHover = itsHover ? translateYOnHover + 0.2 : translateValueY;
 
   return (
     <div
       ref={drag}
       id={id}
+      data-testid={`card-${id}`}
       onMouseOver={handleItsHover}
       onMouseOut={handleMouseOut}
       style={{

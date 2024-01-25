@@ -9,3 +9,49 @@
     opacity: 0.4;
     filter: grayscale(1);
 }
+
+.modalHome>div:first-child div:first-child {
+    background: #b474f4;
+    color: white;
+    width: 80%;
+    padding: 2rem;
+    font-size: 1.8rem;
+    position: relative;
+}
+
+.modalHome>div:first-child button {
+    top: 2rem;
+    right: 4rem;
+    font-size: 1.1rem;
+}
+
+
+@media(min-width:800px) {
+    .modalHome>div:first-child div:first-child {
+
+        width: 40%;
+    }
+
+    .modalHome>div:first-child button {
+        font-size: 2rem;
+    }
+}
+
+@media(min-width:1200px) {
+    .modalHome>div:first-child div:first-child {
+
+        width: 32%;
+    }
+
+    .modalHome>div:first-child button {
+        font-size: 2rem;
+    }
+}
+
+@media(min-width:1600px) {
+    .modalHome>div:first-child div:first-child {
+
+        width: 25%;
+    }
+
+}
