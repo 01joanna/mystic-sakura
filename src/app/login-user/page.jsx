@@ -4,8 +4,9 @@ import clsx from "clsx";
 import Image from "next/image";
 import Button from "@/app/components/button/Button";
 import { useState } from "react";
-import { postUser } from "@/app/services/login";
+import { postUser, validIfUserExist } from "@/app/services/login";
 import { useRouter } from "next/navigation";
+
 
 export default function LoginUser() {
   const [userName, setUserName] = useState("");
@@ -17,6 +18,14 @@ export default function LoginUser() {
      setIsEmpty(true);
      return;
     }
+
+    const isUserExists = await validIfUserExist(userName) 
+    if(isUserExists){
+      localStorage.setItem("currentUserLogin", isUserExists.id)
+      router.push("/home");
+      return
+    }
+
     const user =  {
       id: crypto.randomUUID(),
       userName: userName,
@@ -27,19 +36,12 @@ export default function LoginUser() {
         if(data.id){
           router.push("/home");
           setUserName("");
+          localStorage.setItem("currentUserLogin", data.id)
         }
        });
     }
     callPostUser();
 
-  // const callPostUser = async()=>{
-  //   const data = await postUser(user)
-  //   if(data.id){
-  //     router.push("/");
-  //       setUserName("");
-  //   }
-  //   }
-  //   callPostUser();
   
   }
 
@@ -109,21 +111,15 @@ export default function LoginUser() {
                 onChange={(event) => setUserName(event.target.value)}
                 
               />
+              {isEmpty && "Rellena tu nombre!"}
               <span className={styles.loader}></span>
             
               <Button
                 text={"EMPEZAR"}
-                // behaviour={"link"}
-                // href="/home"
-                onClick={() => {
-              
-                  router.push("/home");
-                }}
-                  
                 sourceIcon={"/assets/images/kero-icon.svg"}
                 pinkColor={true}
                 className={"mt-[4rem]  mr-[2rem]"}
-             />
+              />
 
             </form>
             <Image

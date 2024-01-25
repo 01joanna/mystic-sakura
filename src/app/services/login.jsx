@@ -13,3 +13,11 @@ export const postUser = async(data) => {
     const response = await axios.post(`${process.env.API_URL}/users`, data);
     return response;
 }
+
+export const validIfUserExist = async(userName) => {
+    const currentUsers = await getAllUser();
+    const existAnUser = currentUsers.data.filter((user) =>user.userName === userName) 
+    if(existAnUser.length > 0) return existAnUser[0];
+        
+    
+}
