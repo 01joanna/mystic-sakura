@@ -1,51 +1,53 @@
-"use client"
+"use client";
 import styles from "@/app/login-user/styles.module.css";
 import clsx from "clsx";
 import Image from "next/image";
 import Button from "@/app/components/button/Button";
 import { useState } from "react";
-import { postUser, validIfUserExist } from "@/app/services/login";
+import { postUser, validIfUserExists } from "@/app/services/login";
 import { useRouter } from "next/navigation";
-
 
 export default function LoginUser() {
   const [userName, setUserName] = useState("");
   const [isEmpty, setIsEmpty] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
-  const handleUserLogin = async(event)=>{
+
+  const handleUserLogin = async (event) => {
     event.preventDefault();
-    if(!userName.trim()){
-     setIsEmpty(true);
-     return;
+    localStorage.removeItem("hasModalBeenShown");
+    if (!userName.trim()) {
+      setIsEmpty(true);
+      return;
     }
 
-    const isUserExists = await validIfUserExist(userName) 
-    if(isUserExists){
-      localStorage.setItem("currentUserLogin", isUserExists.id)
+    const isUserExists = await validIfUserExists(userName);
+    setIsLoading(true);
+
+    if (isUserExists) {
+      localStorage.setItem("currentUserLogged", isUserExists.id);
       router.push("/home");
-      return
+      return;
     }
-
-    const user =  {
+    const user = {
       id: crypto.randomUUID(),
       userName: userName,
-    }
-  
-    const callPostUser = async()=>{
-    await postUser(user).then((data)=>{
-        if(data.id){
-          router.push("/home");
-          setUserName("");
-          localStorage.setItem("currentUserLogin", data.id)
-        }
-       });
-    }
-    callPostUser();
+    };
+    setTimeout(() => {
+      const callPostUser = async () => {
+        await postUser(user).then((data) => {
+          if (data.id) {
+            router.push("/");
+            setUserName("");
+            // guardar el id para guardar el id de user loggeado, para usar para otras llamadas
+            localStorage.setItem("currentUserLogged", data.id);
+          }
+        });
+      };
 
-  
-  }
-
- 
+      callPostUser();
+    }, 1000);
+  };
 
   return (
     <section className="h-[100vh] flex flex-col justify-center items-center">
@@ -94,7 +96,10 @@ export default function LoginUser() {
               alt="adorno horizontal"
               className="w-full absolute top-0"
             />
-            <form className="flex justify-center items-center flex-col w-[80%] h-[30vh] lg:w-[50rem]" onSubmit={handleUserLogin}> 
+            <form
+              className="flex justify-center items-center flex-col w-[80%] h-[30vh] lg:w-[50rem]"
+              onSubmit={handleUserLogin}
+            >
               <h1 className="text-yellowColor text-[2rem] text-center font-showcard mb-[2rem] md:text-[2.2rem] lg:pt-[0.5rem] lg:text-[2.4rem] min-[1400px]:text-[2.5rem] ">
                 Nombre de usuario(*)
               </h1>
@@ -109,18 +114,18 @@ export default function LoginUser() {
                 placeholder="Escribe tu nombre ..."
                 value={userName}
                 onChange={(event) => setUserName(event.target.value)}
-                
               />
               {isEmpty && "Rellena tu nombre!"}
-              <span className={styles.loader}></span>
-            
-              <Button
-                text={"EMPEZAR"}
-                sourceIcon={"/assets/images/kero-icon.svg"}
-                pinkColor={true}
-                className={"mt-[4rem]  mr-[2rem]"}
-              />
-
+              {isLoading ? (
+                <span className={styles.loader}></span>
+              ) : (
+                <Button
+                  text={"EMPEZAR"}
+                  sourceIcon={"/assets/images/kero-icon.svg"}
+                  pinkColor={true}
+                  className={"mt-[4rem]  mr-[2rem]"}
+                />
+              )}
             </form>
             <Image
               width={220}

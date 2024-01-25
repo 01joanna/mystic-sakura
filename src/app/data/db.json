@@ -3,15 +3,139 @@
     {
       "id": "1",
       "userName": "pepito"
+    },
+    {
+      "id": "aaffc98b-13d0-4fb7-a323-5d3d65ffe2ae",
+      "userName": "karen Nathalia"
     }
   ],
   "plays": [
     {
-      "id": "p-123",
-      "user_id": "",
-      "day": "22/1/2024",
+      "id": "p-dcd6ade9-5c0c-4600-956f-417274490dfe",
+      "user_id": "aaffc98b-13d0-4fb7-a323-5d3d65ffe2ae",
+      "day": "25/1/2024",
       "cards": [
-        {}
+        {
+          "id": "35",
+          "cardNumber": 35,
+          "spanishName": "Cambio",
+          "englishName": "The Change",
+          "kanji": "替",
+          "Rōmaji": "Kawa",
+          "appeardManga": "",
+          "appeardAnime": "32",
+          "clowCard": "https://i.ibb.co/xmxSHrT/Cambio.jpg",
+          "sakuraCard": "https://i.ibb.co/wMRvj2L/Cambio-Sakura.jpg",
+          "meaning": "Esta carta simboliza cambio, apariencia, adaptación.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "predictionTime": "Pasado"
+        },
+        {
+          "id": "31",
+          "cardNumber": 31,
+          "spanishName": "Dulce",
+          "englishName": "The Sweet",
+          "kanji": "甘",
+          "Rōmaji": "Ama",
+          "appeardManga": "",
+          "appeardAnime": "29",
+          "clowCard": "https://i.ibb.co/1Ggd29p/Dulce.jpg",
+          "sakuraCard": "https://i.ibb.co/HpthzhS/Dulce-Sakura.jpg",
+          "meaning": "Simboliza la dulzura, la infancia, la protección de nuestros padres.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "predictionTime": "Presente"
+        },
+        {
+          "id": "5",
+          "cardNumber": 5,
+          "spanishName": "Lluvia",
+          "englishName": "The Rain",
+          "kanji": "雨",
+          "Rōmaji": "Ame",
+          "appeardManga": "",
+          "appeardAnime": "4",
+          "clowCard": "https://i.ibb.co/ryfdTjL/Lluvia.jpg",
+          "sakuraCard": "https://i.ibb.co/YBxFKBt/Lluvia-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza la cancelación de planes o procesos debido a agentes externos.",
+          "__v": 0,
+          "predictionTime": "Futuro"
+        }
+      ]
+    },
+    {
+      "id": "p-6af83770-4d94-4ecc-ac5f-f1b017f1d6bd",
+      "user_id": "aaffc98b-13d0-4fb7-a323-5d3d65ffe2ae",
+      "day": "25/1/2024",
+      "cards": [
+        {
+          "id": "36",
+          "cardNumber": 36,
+          "spanishName": "Hielo",
+          "englishName": "The Freeze",
+          "kanji": "凍",
+          "Rōmaji": "Koo",
+          "appeardManga": "",
+          "appeardAnime": "33",
+          "clowCard": "https://i.ibb.co/7KqPsn2/Hielo.jpg",
+          "sakuraCard": "https://i.ibb.co/txQPBq6/Hielo-Sakura.jpg",
+          "meaning": "Simboliza la dificultad al avanzar, un bloqueo, o la parada de algo.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "predictionTime": "Pasado"
+        },
+        {
+          "id": "32",
+          "cardNumber": 32,
+          "spanishName": "Carrera",
+          "englishName": "The Dash",
+          "kanji": "駆",
+          "Rōmaji": "Ka",
+          "appeardManga": "",
+          "appeardAnime": "30",
+          "clowCard": "https://i.ibb.co/sq76L1J/Carrera.jpg",
+          "sakuraCard": "https://i.ibb.co/Wz0VZpP/Carrera-Sakura.jpg",
+          "meaning": "Simboliza la velocidad, los reflejos, la capacidad de actuar rápidamente",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "predictionTime": "Presente"
+        },
+        {
+          "id": "33",
+          "cardNumber": 33,
+          "spanishName": "Grande",
+          "englishName": "The Big",
+          "kanji": "大",
+          "Rōmaji": "Dai",
+          "appeardManga": "",
+          "appeardAnime": "31",
+          "clowCard": "https://i.ibb.co/gz8Qmfb/Grande.jpg",
+          "sakuraCard": "https://i.ibb.co/J2NYWjS/Grande-Sakura.jpg",
+          "meaning": "Esta carta simboliza el crecimiento, el avance, el éxito.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "predictionTime": "Futuro"
+        }
       ]
     }
   ]

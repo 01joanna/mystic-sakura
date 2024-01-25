@@ -1,3 +1,4 @@
+"use client";
 import clsx from "clsx";
 import styles from "./styles.module.css";
 const Modal = ({ isOpen, onClose, children }) => {
