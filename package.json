@@ -9,10 +9,13 @@
     "test": "jest",
     "lint": "next lint",
     "cypress:open": "cypress open",
-    "test:watch": "jest --watch --colors"
+    "test:watch": "jest --watch --colors",
+    "start:json": "json-server src/app/data/db.json --port 3005"
   },
   "dependencies": {
+    "axios": "^1.6.6",
     "clsx": "^2.1.0",
+    "json-server": "^1.0.0-alpha.22",
     "next": "^14.1.0",
     "react": "^18.2.0",
     "react-dnd": "^16.0.1",
