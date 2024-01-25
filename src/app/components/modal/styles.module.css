@@ -2,23 +2,18 @@
   width: 12px;
 }
 
-  width: 12px;
-}
 
 .scrollbar::-webkit-scrollbar-thumb {
   background-color: transparent;
 
 }
 
-  background-color: transparent;
 
-}
 
 .scrollbar::-webkit-scrollbar-track {
   background-color: transparent;
 }
-  background-color: transparent;
-}
+
 
 .modalOverlay {
   display: none;
