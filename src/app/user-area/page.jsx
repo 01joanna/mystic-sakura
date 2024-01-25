@@ -1,10 +1,11 @@
-"use client"
-import UserTable from "../components/UserTable/UserTable";
+import UserArea from "./UserArea";
+import styles from "../home/styles.module.css";
 
-export default function UserArea() {
+
+export default function UserPage() {
   return (
-    <div className="flex justify-center items-center">
-      <UserTable/>
-    </div>
+    <main className={styles.sky}>
+      <UserArea />
+    </main>
   );
 }

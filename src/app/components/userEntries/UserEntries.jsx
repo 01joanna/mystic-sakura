@@ -2,7 +2,7 @@ import UserEntry from "../userEntry/UserEntry";
 
 export default function UserEntries() {
     return (
-        <div className="w-[33rem] lg:w-[62rem]">
+        <div className="w-full lg:w-[62rem] p-4 lg:p-8">
             <table className=" w-full table-auto border-collapse">
                 <thead className="font-showcard text-xl lg:text-2xl text-yellowColor h-7 lg:h-9">
                     <tr>
@@ -14,11 +14,6 @@ export default function UserEntries() {
                     </tr>
                 </thead>
                 <tbody className="font-jost text-sm lg:text-xl text-white divide-y divide-pink-800">
-                    <UserEntry />
-                    <UserEntry />
-                    <UserEntry />
-                    <UserEntry />
-                    <UserEntry />
                     <UserEntry />
                 </tbody>
             </table>
