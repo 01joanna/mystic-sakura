@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "userName": "pepito"
+    }
+  ],
+  "plays": [
+    {
+      "id": "p-123",
+      "user_id": "",
+      "day": "22/1/2024",
+      "cards": [
+        {}
+      ]
+    }
+  ]
+}

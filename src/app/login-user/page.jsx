@@ -1,8 +1,50 @@
+"use client"
 import styles from "@/app/login-user/styles.module.css";
 import clsx from "clsx";
 import Image from "next/image";
 import Button from "@/app/components/button/Button";
+import { useState } from "react";
+import { postUser } from "@/app/services/login";
+import { useRouter } from "next/navigation";
+
 export default function LoginUser() {
+  const [userName, setUserName] = useState("");
+  const [isEmpty, setIsEmpty] = useState(false);
+  const router = useRouter();
+  const handleUserLogin = async(event)=>{
+    event.preventDefault();
+    if(!userName.trim()){
+     setIsEmpty(true);
+     return;
+    }
+    const user =  {
+      id: crypto.randomUUID(),
+      userName: userName,
+    }
+  
+    const callPostUser = async()=>{
+    await postUser(user).then((data)=>{
+        if(data.id){
+          router.push("/home");
+          setUserName("");
+        }
+       });
+    }
+    callPostUser();
+
+  // const callPostUser = async()=>{
+  //   const data = await postUser(user)
+  //   if(data.id){
+  //     router.push("/");
+  //       setUserName("");
+  //   }
+  //   }
+  //   callPostUser();
+  
+  }
+
+ 
+
   return (
     <section className="h-[100vh] flex flex-col justify-center items-center">
       <div>
@@ -50,7 +92,7 @@ export default function LoginUser() {
               alt="adorno horizontal"
               className="w-full absolute top-0"
             />
-            <form className="flex justify-center items-center flex-col w-[80%] h-[30vh] lg:w-[50rem]">
+            <form className="flex justify-center items-center flex-col w-[80%] h-[30vh] lg:w-[50rem]" onSubmit={handleUserLogin}> 
               <h1 className="text-yellowColor text-[2rem] text-center font-showcard mb-[2rem] md:text-[2.2rem] lg:pt-[0.5rem] lg:text-[2.4rem] min-[1400px]:text-[2.5rem] ">
                 Nombre de usuario(*)
               </h1>
@@ -63,8 +105,26 @@ export default function LoginUser() {
                 type="text"
                 id="nombre"
                 placeholder="Escribe tu nombre ..."
+                value={userName}
+                onChange={(event) => setUserName(event.target.value)}
+                
               />
               <span className={styles.loader}></span>
+            
+              <Button
+                text={"EMPEZAR"}
+                // behaviour={"link"}
+                // href="/home"
+                onClick={() => {
+              
+                  router.push("/home");
+                }}
+                  
+                sourceIcon={"/assets/images/kero-icon.svg"}
+                pinkColor={true}
+                className={"mt-[4rem]  mr-[2rem]"}
+             />
+
             </form>
             <Image
               width={220}
@@ -82,14 +142,6 @@ export default function LoginUser() {
             className="w-full hidden lg:block  lg:w-[55%] lg:absolute lg:right-[-23rem] lg:top-[0rem] z-10 min-[1400px]:w-[50%] min-[1400px]:right-[-20rem] min-[1600px]:top-[2rem] min-[1600px]:w-[52%]"
           />
         </div>
-        <Button
-          text={"EMPEZAR"}
-          behaviour={"Link"}
-          href="/home"
-          sourceIcon={"/assets/images/kero-icon.svg"}
-          pinkColor={true}
-          className={"mt-[4rem]  mr-[2rem]"}
-        />
       </div>
     </section>
   );
