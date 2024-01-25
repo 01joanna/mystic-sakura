@@ -30,7 +30,6 @@ export default function ReadingApp() {
 
   const handleOpenModal = () => {
     setModalOpen(true);
-    console.log("click");
   };
 
   const handleCloseModal = () => {
