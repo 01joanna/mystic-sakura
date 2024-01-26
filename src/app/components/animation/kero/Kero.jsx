@@ -66,7 +66,7 @@ export default function Kero() {
           onClose={handleCloseModal}
           className={styles.modalInfo}
         >
-          <div className={clsx(styles.modalDesing, "")}>
+          <div className={clsx(styles.modalDesing)} data-testid="modalDesing">
             <Image
               width={500}
               height={35}

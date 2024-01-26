@@ -6,7 +6,6 @@ import Button from "@/app/components/button/Button";
 import { useState } from "react";
 import { postUser, validIfUserExists } from "@/app/services/login";
 import { useRouter } from "next/navigation";
-
 export default function LoginUser() {
   const [userName, setUserName] = useState("");
   const [isEmpty, setIsEmpty] = useState(false);
@@ -47,7 +46,7 @@ export default function LoginUser() {
   };
 
   return (
-    <section className="h-[100vh] flex flex-col pt-[8rem] items-center min-[1000px]:pt-[6rem] min-[1600px]:pt-[15rem]">
+    <section className="h-[100vh] text-[jost] flex flex-col pt-[4rem] items-center min-[1000px]:pt-[6rem] min-[1600px]:pt-[15rem]">
       <div>
         <div className={styles.logoLogin}>
           <Image

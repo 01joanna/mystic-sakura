@@ -156,7 +156,7 @@ export default function PlaceholderCard({
                 "pb-4 md:w-[100px] lg:w-[120px] min-[1400px]:w-[130px]"
               )}
             />
-            <p className="text-yellowColor text-[12px] md:text-[1.2rem] lg:text-[1.5rem] lg:pt-[0.5rem] text-center font-jost w-3/4 pt-0.5 tracking-[.07rem] min-[1400px]:text-[1.5rem] ">
+            <p className="text-yellowColor text-[12px] md:text-[1.2rem] lg:text-[1.5rem] lg:pt-[0.5rem] text-center text-[jost] w-3/4 pt-0.5 tracking-[.07rem] min-[1400px]:text-[1.5rem] ">
               Elige una carta
             </p>
             <h3 className="text-yellowColor text-[1.4rem] md:text-[2.2rem] lg:pt-[0.5rem] text-center font-showcard  min-[1400px]:text-[2rem] ">
