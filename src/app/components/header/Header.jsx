@@ -1,6 +1,10 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 export default function Header() {
+  const idUser =
+    typeof window !== "undefined" && localStorage.getItem("currentUserLogged");
+  console.log({ idUser });
   return (
     <div className="flex pt-[6rem] px-[3rem] flex-col justify-center gap-8 md:flex-row md:justify-between md:items-center lg:justify-between lg:px-[4rem] lg:pt-[3rem]">
       <Image
@@ -18,7 +22,7 @@ export default function Header() {
           alt="icon usuario mistic shakura"
         />
         <Link
-          href={"/user-area"}
+          href={`/user-area/${idUser}`}
           className="text-[1.5rem] text-[#dec9f3] font-showcard inline-block lg:text-[2rem]"
         >
           Historial de jugadas

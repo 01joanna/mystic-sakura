@@ -1,0 +1,15 @@
+.containerGeneral {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@media(min-width:1024px) {
+    .containerGeneral {
+        background-image: url(/assets/images/modal-vertical-1.png),
+            url(/assets/images/modal-vertical-1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left 1rem top, right 1rem top;
+        /* animation: wingFlap2 1.1s ease-in-out infinite; */
+        box-shadow: rgb(0 0 0 / 86%) -1px 1px 11px, rgb(0 0 0 / 80%) -1px -4px 10px, rgb(0 0 0 / 68%) 0px 1px 5px, rgb(28 27 27 / 82%) 0px 4px 13px, rgb(20 19 19 / 88%) -1px 2px 3px;
+    }
+}

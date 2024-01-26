@@ -8,6 +8,7 @@ import { SakuraContext } from "@/app/context";
 import { useContext } from "react";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
+import { saveReading } from "@/app/services/reading";
 import Image from "next/image";
 import Header from "@/app/components/header/Header";
 import styles from "@/app/home/styles.module.css";
@@ -28,6 +29,16 @@ export default function HomeApp() {
   }, []);
 
   const router = useRouter();
+  const handleSaveReading = async () => {
+    const data = {
+      id: `p-${crypto.randomUUID()}`,
+      user_id: localStorage.getItem("currentUserLogged"),
+      day: new Date().toLocaleDateString(),
+      cards: [...selectedItems],
+    };
+    await saveReading(data).then((data) => console.log(data));
+    router.push("/reading");
+  };
   return (
     <>
       <Header />
@@ -42,9 +53,7 @@ export default function HomeApp() {
       >
         <Button
           disabled={!(selectedItemsLength === 3)}
-          onClick={() => {
-            router.push("/reading");
-          }}
+          onClick={handleSaveReading}
           text={"Lectura"}
           sourceIcon={"/assets/images/btn-icon-pink.svg"}
           data-testid={"btnReading"}

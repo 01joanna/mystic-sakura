@@ -45,6 +45,7 @@ export default function ModalDescription({
         <button
           className="text-yellowColor absolute top-[4vh] right-[4vh] text-[2rem] lg:text-[3rem] 2xl:text-[3rem]"
           onClick={onClose}
+          data-testid="buttonClose"
         >
           X
         </button>
