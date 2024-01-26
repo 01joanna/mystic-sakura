@@ -161,3 +161,12 @@ El proyecto utiliza  Jest para realizar pruebas unitarias y cypress para integra
 
 
 ## 📷 Images from the web / Imagenes de la web
+
+![Captura de pantalla 2024-01-26 092544](https://github.com/01joanna/mystic-sakura/assets/117909832/2b7db7b5-7a7b-4d07-a2ae-4cfe57a8f25e)
+![Captura de pantalla 2024-01-26 092257](https://github.com/01joanna/mystic-sakura/assets/117909832/5b35af74-9122-4150-8606-f1b49ad85903)
+![Captura de pantalla 2024-01-26 092314](https://github.com/01joanna/mystic-sakura/assets/117909832/de3dcf6a-40d8-446c-913a-a9cb8e351932)
+![Captura de pantalla 2024-01-26 092408](https://github.com/01joanna/mystic-sakura/assets/117909832/0fffbb6e-9f6b-4861-9560-83d958b9c0f7)
+![Captura de pantalla 2024-01-26 092421](https://github.com/01joanna/mystic-sakura/assets/117909832/bebdf31a-1d0c-478e-8b5f-44f23560c0e1)
+![Captura de pantalla 2024-01-26 092336](https://github.com/01joanna/mystic-sakura/assets/117909832/991929bf-9cd9-4318-937d-e6ff141509bc)
+
+
