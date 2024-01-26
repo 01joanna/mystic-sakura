@@ -71,12 +71,12 @@
 }
 
 .info {
-    background-image: url(/assets/images/kero/carta-info.png);
+    background-image: url(/assets/images/kero/carta-info-3.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 4rem;
-    height: 8rem;
+    width: 6rem;
+    height: 10em;
     animation: float 4s linear infinite;
 }
 
@@ -93,6 +93,17 @@
     100% {
 
         transform: translate(3px, -4px);
+    }
+}
+
+@media(min-width:1024px) {
+    .modalDesing {
+        background-image: url(/assets/images/modal-vertical-1.png),
+            url(/assets/images/modal-vertical-1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left 2rem top, right 2rem top;
+        ;
     }
 }
 

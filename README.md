@@ -1,6 +1,6 @@
 English
 
- # 🌸Sakura Tarot 🌸 
+ # 🌸 Sakura Tarot 🌸 
 
  This project aims to make an application that consumes the Sakura API that returns a JSON file with the information of the cards- a virtual tarot that tells us our past, present and future. The user will be able to choose a card for the past, another for the present and another for the future, then he will be able to obtain the meaning of each card he has chosen. The proposed version is in Spanish and uses modern technologies such as React.js and Next.js to guarantee scalability and performance and data persistence with Json-server.
 
@@ -21,26 +21,26 @@ Npm
 
 ## 💿 Installing the Repository
 
-1.Clone this repository.
+1. Clone this repository.
 
-https://github.com/01joanna/mystic-sakura.git
+```https://github.com/01joanna/mystic-sakura.git```
 
-2.Install dependencies.
+2. Install dependencies.
 
-cd mystic-sakura
+```cd mystic-sakura```
 
-npm install
+```npm install```
 
 ## 🌈 Getting Started
 
 First, run the development server:
-npm run dev
+```npm run dev```
  or
-yarn dev
+```yarn dev```
  or
-pnpm dev
+```npm dev```
  or
-bun dev
+```bun dev```
 
 Open http://localhost:3000 with your browser to see the result.
 
@@ -73,11 +73,11 @@ It is organized as follows: mystic-sakura/
 ## 🧪 ##Tests
 The project uses Jest for unit testing and cypress for integration. Run the tests with:
 
-npm test
+```npm test```
 
 0
 
-npm run test /*nombre del test*/
+```npm run test /*nombre del test*/```
 
 
 Español
@@ -104,25 +104,25 @@ Npm
 
 1.Clona este repositorio.
 
-https://github.com/01joanna/mystic-sakura.git
+```https://github.com/01joanna/mystic-sakura.git```
 
 2.Instalar Dependencias.
 
-cd mystic-sakura
+```cd mystic-sakura```
 
-npm install
+```npm install```
 
 ## 🌈 Start
 
 Ejecutar el servidor de desarrollo con: 
 
-npm run dev
+```npm run dev```
  or
-yarn dev
+```yarn dev```
  or
-pnpm dev
+```pnpm dev```
  or
-bun dev
+```bun dev```
 
 Abre  http://localhost:3000 con su navegador para ver el resultado.
 
@@ -153,11 +153,20 @@ Está organizada de la siguiente manera: mystic-sakura/
 ## 🧪 Pruebas
 El proyecto utiliza  Jest para realizar pruebas unitarias y cypress para integracion. Ejecuta las pruebas con:
 
-npm test
+```npm test```
 
 0
 
-npm run test /*nombre del test*/
+```npm run test /*nombre del test*/```
 
 
 ## 📷 Images from the web / Imagenes de la web
+
+![Captura de pantalla 2024-01-26 092544](https://github.com/01joanna/mystic-sakura/assets/117909832/2b7db7b5-7a7b-4d07-a2ae-4cfe57a8f25e)
+![Captura de pantalla 2024-01-26 092257](https://github.com/01joanna/mystic-sakura/assets/117909832/5b35af74-9122-4150-8606-f1b49ad85903)
+![Captura de pantalla 2024-01-26 092314](https://github.com/01joanna/mystic-sakura/assets/117909832/de3dcf6a-40d8-446c-913a-a9cb8e351932)
+![Captura de pantalla 2024-01-26 092408](https://github.com/01joanna/mystic-sakura/assets/117909832/0fffbb6e-9f6b-4861-9560-83d958b9c0f7)
+![Captura de pantalla 2024-01-26 092421](https://github.com/01joanna/mystic-sakura/assets/117909832/bebdf31a-1d0c-478e-8b5f-44f23560c0e1)
+![Captura de pantalla 2024-01-26 092336](https://github.com/01joanna/mystic-sakura/assets/117909832/991929bf-9cd9-4318-937d-e6ff141509bc)
+
+

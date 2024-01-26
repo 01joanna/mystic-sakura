@@ -6,25 +6,32 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "test": "jest",
     "lint": "next lint",
     "cypress:open": "cypress open",
-    "test:watch": "jest --watch --colors"
+    "test:watch": "jest --watch --colors",
+    "start:json": "json-server src/app/data/db.json --port 3005"
   },
   "dependencies": {
+    "axios": "^1.6.6",
     "clsx": "^2.1.0",
-    "next": "14.0.4",
-    "react": "^18",
+    "json-server": "^1.0.0-alpha.22",
+    "next": "^14.1.0",
+    "react": "^18.2.0",
     "react-dnd": "^16.0.1",
     "react-dnd-html5-backend": "^16.0.1",
-    "react-dom": "^18"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^6.2.0",
+    "@4tw/cypress-drag-drop": "^2.2.5",
+    "@testing-library/jest-dom": "^6.3.0",
     "@testing-library/react": "^14.1.2",
     "autoprefixer": "^10.0.1",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "postcss": "^8",
+    "react-dnd-test-backend": "^16.0.1",
+    "react-dnd-test-utils": "^16.0.1",
     "tailwindcss": "^3.3.0"
   }
 }

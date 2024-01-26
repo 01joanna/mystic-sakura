@@ -25,7 +25,7 @@ export const calculateTranslateValues = (id, itsHover) => {
     }
     // Estilos para pantallas más grandes
     return {
-      translateValueX: id < 28 ? id * 2.5 : -2.5 * (id - 27),
+      translateValueX: id < 28 ? id * 2.5 : -2.5 * (id - 28),
       translateValueY: id % 2 === 0 ? 0.3 : -0.3,
       rotation: rotation,
     };

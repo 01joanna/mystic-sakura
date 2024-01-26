@@ -1,0 +1,1046 @@
+{
+  "users": [
+    {
+      "id": "237fcecb-f22d-47f3-93d1-cf930ecea81d",
+      "userName": "Ariana"
+    },
+    {
+      "id": "76e390be-5393-406a-bb04-02475ca3c55d",
+      "userName": "Ana"
+    },
+    {
+      "id": "76e390be-5393-406a-bb04-02475ca3c55d",
+      "userName": "Jose"
+    },
+    {
+      "id": "6c06d699-a0b5-4095-8214-c21f4b9fbe3e",
+      "userName": "Gabriela"
+    }
+  ],
+  "plays": [
+    {
+      "id": "p-dcd6ade9-5c0c-4600-956f-417274490dfe",
+      "user_id": "aaffc98b-13d0-4fb7-a323-5d3d65ffe2ae",
+      "day": "25/1/2024",
+      "cards": [
+        {
+          "id": "35",
+          "cardNumber": 35,
+          "spanishName": "Cambio",
+          "englishName": "The Change",
+          "kanji": "替",
+          "Rōmaji": "Kawa",
+          "appeardManga": "",
+          "appeardAnime": "32",
+          "clowCard": "https://i.ibb.co/xmxSHrT/Cambio.jpg",
+          "sakuraCard": "https://i.ibb.co/wMRvj2L/Cambio-Sakura.jpg",
+          "meaning": "Esta carta simboliza cambio, apariencia, adaptación.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "predictionTime": "Pasado"
+        },
+        {
+          "id": "31",
+          "cardNumber": 31,
+          "spanishName": "Dulce",
+          "englishName": "The Sweet",
+          "kanji": "甘",
+          "Rōmaji": "Ama",
+          "appeardManga": "",
+          "appeardAnime": "29",
+          "clowCard": "https://i.ibb.co/1Ggd29p/Dulce.jpg",
+          "sakuraCard": "https://i.ibb.co/HpthzhS/Dulce-Sakura.jpg",
+          "meaning": "Simboliza la dulzura, la infancia, la protección de nuestros padres.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "predictionTime": "Presente"
+        },
+        {
+          "id": "5",
+          "cardNumber": 5,
+          "spanishName": "Lluvia",
+          "englishName": "The Rain",
+          "kanji": "雨",
+          "Rōmaji": "Ame",
+          "appeardManga": "",
+          "appeardAnime": "4",
+          "clowCard": "https://i.ibb.co/ryfdTjL/Lluvia.jpg",
+          "sakuraCard": "https://i.ibb.co/YBxFKBt/Lluvia-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza la cancelación de planes o procesos debido a agentes externos.",
+          "__v": 0,
+          "predictionTime": "Futuro"
+        }
+      ]
+    },
+    {
+      "id": "p-6af83770-4d94-4ecc-ac5f-f1b017f1d6bd",
+      "user_id": "aaffc98b-13d0-4fb7-a323-5d3d65ffe2ae",
+      "day": "25/1/2024",
+      "cards": [
+        {
+          "id": "36",
+          "cardNumber": 36,
+          "spanishName": "Hielo",
+          "englishName": "The Freeze",
+          "kanji": "凍",
+          "Rōmaji": "Koo",
+          "appeardManga": "",
+          "appeardAnime": "33",
+          "clowCard": "https://i.ibb.co/7KqPsn2/Hielo.jpg",
+          "sakuraCard": "https://i.ibb.co/txQPBq6/Hielo-Sakura.jpg",
+          "meaning": "Simboliza la dificultad al avanzar, un bloqueo, o la parada de algo.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "predictionTime": "Pasado"
+        },
+        {
+          "id": "32",
+          "cardNumber": 32,
+          "spanishName": "Carrera",
+          "englishName": "The Dash",
+          "kanji": "駆",
+          "Rōmaji": "Ka",
+          "appeardManga": "",
+          "appeardAnime": "30",
+          "clowCard": "https://i.ibb.co/sq76L1J/Carrera.jpg",
+          "sakuraCard": "https://i.ibb.co/Wz0VZpP/Carrera-Sakura.jpg",
+          "meaning": "Simboliza la velocidad, los reflejos, la capacidad de actuar rápidamente",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "predictionTime": "Presente"
+        },
+        {
+          "id": "33",
+          "cardNumber": 33,
+          "spanishName": "Grande",
+          "englishName": "The Big",
+          "kanji": "大",
+          "Rōmaji": "Dai",
+          "appeardManga": "",
+          "appeardAnime": "31",
+          "clowCard": "https://i.ibb.co/gz8Qmfb/Grande.jpg",
+          "sakuraCard": "https://i.ibb.co/J2NYWjS/Grande-Sakura.jpg",
+          "meaning": "Esta carta simboliza el crecimiento, el avance, el éxito.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "predictionTime": "Futuro"
+        }
+      ]
+    },
+    {
+      "id": "p-c20b1420-ea13-458e-b044-d6a766813c8e",
+      "user_id": "e266d02b-5090-4f72-af48-da821b3a19bf",
+      "day": "26/1/2024",
+      "cards": [
+        {
+          "id": "3",
+          "cardNumber": 3,
+          "spanishName": "Sombra",
+          "englishName": "The Shadow",
+          "kanji": "影",
+          "Rōmaji": "Kage",
+          "appeardManga": "10",
+          "appeardAnime": "2",
+          "clowCard": "https://i.ibb.co/9W42mHB/Sombra.jpg",
+          "sakuraCard": "https://i.ibb.co/q7dgnKZ/Sombra-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Indica el sigilo.",
+          "__v": 0,
+          "predictionTime": "Pasado"
+        },
+        {
+          "id": "4",
+          "cardNumber": 4,
+          "spanishName": "Agua",
+          "englishName": "The Watery",
+          "kanji": "水",
+          "Rōmaji": "Mizu",
+          "appeardManga": "3",
+          "appeardAnime": "3",
+          "clowCard": "https://i.ibb.co/KLrv3BF/Agua.jpg",
+          "sakuraCard": "https://i.ibb.co/HxLpWy5/Agua-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza los sentimientos, la expansión, la habilidad de la adivinación.",
+          "__v": 0,
+          "predictionTime": "Presente"
+        },
+        {
+          "id": "5",
+          "cardNumber": 5,
+          "spanishName": "Lluvia",
+          "englishName": "The Rain",
+          "kanji": "雨",
+          "Rōmaji": "Ame",
+          "appeardManga": "",
+          "appeardAnime": "4",
+          "clowCard": "https://i.ibb.co/ryfdTjL/Lluvia.jpg",
+          "sakuraCard": "https://i.ibb.co/YBxFKBt/Lluvia-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza la cancelación de planes o procesos debido a agentes externos.",
+          "__v": 0,
+          "predictionTime": "Futuro"
+        }
+      ]
+    },
+    {
+      "id": "p-ca417162-3e41-4140-a4ea-697acf24c66e",
+      "user_id": "e266d02b-5090-4f72-af48-da821b3a19bf",
+      "day": "26/1/2024",
+      "cards": [
+        {
+          "id": "3",
+          "cardNumber": 3,
+          "spanishName": "Sombra",
+          "englishName": "The Shadow",
+          "kanji": "影",
+          "Rōmaji": "Kage",
+          "appeardManga": "10",
+          "appeardAnime": "2",
+          "clowCard": "https://i.ibb.co/9W42mHB/Sombra.jpg",
+          "sakuraCard": "https://i.ibb.co/q7dgnKZ/Sombra-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Indica el sigilo.",
+          "__v": 0,
+          "predictionTime": "Pasado"
+        },
+        {
+          "id": "5",
+          "cardNumber": 5,
+          "spanishName": "Lluvia",
+          "englishName": "The Rain",
+          "kanji": "雨",
+          "Rōmaji": "Ame",
+          "appeardManga": "",
+          "appeardAnime": "4",
+          "clowCard": "https://i.ibb.co/ryfdTjL/Lluvia.jpg",
+          "sakuraCard": "https://i.ibb.co/YBxFKBt/Lluvia-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza la cancelación de planes o procesos debido a agentes externos.",
+          "__v": 0,
+          "predictionTime": "Presente"
+        },
+        {
+          "id": "6",
+          "cardNumber": 6,
+          "spanishName": "Bosque",
+          "englishName": "The Wood",
+          "kanji": "樹",
+          "Rōmaji": "Ki",
+          "appeardManga": "1",
+          "appeardAnime": "4",
+          "clowCard": "https://i.ibb.co/17154Dk/Bosque.jpg",
+          "sakuraCard": "https://i.ibb.co/hYMDk2F/Bosque-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza el dominio y la integración del medio, de la naturaleza.",
+          "__v": 0,
+          "predictionTime": "Futuro"
+        }
+      ]
+    },
+    {
+      "id": "p-48f23933-2408-4497-a2f0-036ce78a24b8",
+      "user_id": "e266d02b-5090-4f72-af48-da821b3a19bf",
+      "day": "26/1/2024",
+      "cards": [
+        {
+          "id": "3",
+          "cardNumber": 3,
+          "spanishName": "Sombra",
+          "englishName": "The Shadow",
+          "kanji": "影",
+          "Rōmaji": "Kage",
+          "appeardManga": "10",
+          "appeardAnime": "2",
+          "clowCard": "https://i.ibb.co/9W42mHB/Sombra.jpg",
+          "sakuraCard": "https://i.ibb.co/q7dgnKZ/Sombra-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Indica el sigilo.",
+          "__v": 0,
+          "predictionTime": "Pasado"
+        },
+        {
+          "id": "5",
+          "cardNumber": 5,
+          "spanishName": "Lluvia",
+          "englishName": "The Rain",
+          "kanji": "雨",
+          "Rōmaji": "Ame",
+          "appeardManga": "",
+          "appeardAnime": "4",
+          "clowCard": "https://i.ibb.co/ryfdTjL/Lluvia.jpg",
+          "sakuraCard": "https://i.ibb.co/YBxFKBt/Lluvia-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza la cancelación de planes o procesos debido a agentes externos.",
+          "__v": 0,
+          "predictionTime": "Presente"
+        },
+        {
+          "id": "6",
+          "cardNumber": 6,
+          "spanishName": "Bosque",
+          "englishName": "The Wood",
+          "kanji": "樹",
+          "Rōmaji": "Ki",
+          "appeardManga": "1",
+          "appeardAnime": "4",
+          "clowCard": "https://i.ibb.co/17154Dk/Bosque.jpg",
+          "sakuraCard": "https://i.ibb.co/hYMDk2F/Bosque-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza el dominio y la integración del medio, de la naturaleza.",
+          "__v": 0,
+          "predictionTime": "Futuro"
+        }
+      ]
+    },
+    {
+      "id": "p-63200bb9-9208-4e95-b38d-0c93b14cae5f",
+      "user_id": "76e390be-5393-406a-bb04-02475ca3c55d",
+      "day": "26/1/2024",
+      "cards": [
+        {
+          "id": "6",
+          "cardNumber": 6,
+          "spanishName": "Bosque",
+          "englishName": "The Wood",
+          "kanji": "樹",
+          "Rōmaji": "Ki",
+          "appeardManga": "1",
+          "appeardAnime": "4",
+          "clowCard": "https://i.ibb.co/17154Dk/Bosque.jpg",
+          "sakuraCard": "https://i.ibb.co/hYMDk2F/Bosque-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza el dominio y la integración del medio, de la naturaleza.",
+          "__v": 0,
+          "predictionTime": "Pasado"
+        },
+        {
+          "id": "7",
+          "cardNumber": 7,
+          "spanishName": "Salto",
+          "englishName": "The Jump",
+          "kanji": "跳",
+          "Rōmaji": "Odo",
+          "appeardManga": "1",
+          "appeardAnime": "5",
+          "clowCard": "https://i.ibb.co/BfJYRBK/Salto.jpg",
+          "sakuraCard": "https://i.ibb.co/QdT7ZjS/Salto-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": " Representa la evasión de los problemas.",
+          "__v": 0,
+          "predictionTime": "Presente"
+        },
+        {
+          "id": "10",
+          "cardNumber": 10,
+          "spanishName": "Trueno",
+          "englishName": "The Thunder",
+          "kanji": "雷",
+          "Rōmaji": "Kaminari",
+          "appeardManga": "10",
+          "appeardAnime": "8",
+          "clowCard": "https://i.ibb.co/41jrxGB/Trueno.jpg",
+          "sakuraCard": "https://i.ibb.co/1LvxQsH/Trueno-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza la parálisis, la energía",
+          "__v": 0,
+          "predictionTime": "Futuro"
+        }
+      ]
+    },
+    {
+      "id": "p-c03be280-a01d-414d-8603-412b770a6eb2",
+      "user_id": "76e390be-5393-406a-bb04-02475ca3c55d",
+      "day": "26/1/2024",
+      "cards": [
+        {
+          "id": "5",
+          "cardNumber": 5,
+          "spanishName": "Lluvia",
+          "englishName": "The Rain",
+          "kanji": "雨",
+          "Rōmaji": "Ame",
+          "appeardManga": "",
+          "appeardAnime": "4",
+          "clowCard": "https://i.ibb.co/ryfdTjL/Lluvia.jpg",
+          "sakuraCard": "https://i.ibb.co/YBxFKBt/Lluvia-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza la cancelación de planes o procesos debido a agentes externos.",
+          "__v": 0,
+          "predictionTime": "Pasado"
+        },
+        {
+          "id": "8",
+          "cardNumber": 8,
+          "spanishName": "Ilusión",
+          "englishName": "The Illusion",
+          "kanji": "幻",
+          "Rōmaji": "Maboroshi",
+          "appeardManga": "5",
+          "appeardAnime": "6",
+          "clowCard": "https://i.ibb.co/T0JB8PM/Ilusi-n.jpg",
+          "sakuraCard": "https://i.ibb.co/b5rxvqT/Ilusi-n-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza la esperanza, las ganas, la alegría.",
+          "__v": 0,
+          "predictionTime": "Presente"
+        },
+        {
+          "id": "10",
+          "cardNumber": 10,
+          "spanishName": "Trueno",
+          "englishName": "The Thunder",
+          "kanji": "雷",
+          "Rōmaji": "Kaminari",
+          "appeardManga": "10",
+          "appeardAnime": "8",
+          "clowCard": "https://i.ibb.co/41jrxGB/Trueno.jpg",
+          "sakuraCard": "https://i.ibb.co/1LvxQsH/Trueno-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza la parálisis, la energía",
+          "__v": 0,
+          "predictionTime": "Futuro"
+        }
+      ]
+    },
+    {
+      "id": "p-0b2069cf-c8d7-453a-925c-6ca820e495cf",
+      "user_id": "76e390be-5393-406a-bb04-02475ca3c55d",
+      "day": "26/1/2024",
+      "cards": [
+        {
+          "id": "6",
+          "cardNumber": 6,
+          "spanishName": "Bosque",
+          "englishName": "The Wood",
+          "kanji": "樹",
+          "Rōmaji": "Ki",
+          "appeardManga": "1",
+          "appeardAnime": "4",
+          "clowCard": "https://i.ibb.co/17154Dk/Bosque.jpg",
+          "sakuraCard": "https://i.ibb.co/hYMDk2F/Bosque-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza el dominio y la integración del medio, de la naturaleza.",
+          "__v": 0,
+          "predictionTime": "Pasado"
+        },
+        {
+          "id": "7",
+          "cardNumber": 7,
+          "spanishName": "Salto",
+          "englishName": "The Jump",
+          "kanji": "跳",
+          "Rōmaji": "Odo",
+          "appeardManga": "1",
+          "appeardAnime": "5",
+          "clowCard": "https://i.ibb.co/BfJYRBK/Salto.jpg",
+          "sakuraCard": "https://i.ibb.co/QdT7ZjS/Salto-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": " Representa la evasión de los problemas.",
+          "__v": 0,
+          "predictionTime": "Presente"
+        },
+        {
+          "id": "9",
+          "cardNumber": 9,
+          "spanishName": "Silencio",
+          "englishName": "The Silent",
+          "kanji": "静",
+          "Rōmaji": "Sei",
+          "appeardManga": "",
+          "appeardAnime": "7",
+          "clowCard": "https://i.ibb.co/Rjn67P1/Silencio.jpg",
+          "sakuraCard": "https://i.ibb.co/bsQzMK5/Silencio-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza un secreto, el pensar antes de hablar, la represión de la libertad de expresión.",
+          "__v": 0,
+          "predictionTime": "Futuro"
+        }
+      ]
+    },
+    {
+      "id": "p-f5a8409e-2f3d-494d-ade4-d3edb36e3747",
+      "user_id": "76e390be-5393-406a-bb04-02475ca3c55d",
+      "day": "26/1/2024",
+      "cards": [
+        {
+          "id": "6",
+          "cardNumber": 6,
+          "spanishName": "Bosque",
+          "englishName": "The Wood",
+          "kanji": "樹",
+          "Rōmaji": "Ki",
+          "appeardManga": "1",
+          "appeardAnime": "4",
+          "clowCard": "https://i.ibb.co/17154Dk/Bosque.jpg",
+          "sakuraCard": "https://i.ibb.co/hYMDk2F/Bosque-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza el dominio y la integración del medio, de la naturaleza.",
+          "__v": 0,
+          "predictionTime": "Pasado"
+        },
+        {
+          "id": "7",
+          "cardNumber": 7,
+          "spanishName": "Salto",
+          "englishName": "The Jump",
+          "kanji": "跳",
+          "Rōmaji": "Odo",
+          "appeardManga": "1",
+          "appeardAnime": "5",
+          "clowCard": "https://i.ibb.co/BfJYRBK/Salto.jpg",
+          "sakuraCard": "https://i.ibb.co/QdT7ZjS/Salto-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": " Representa la evasión de los problemas.",
+          "__v": 0,
+          "predictionTime": "Presente"
+        },
+        {
+          "id": "10",
+          "cardNumber": 10,
+          "spanishName": "Trueno",
+          "englishName": "The Thunder",
+          "kanji": "雷",
+          "Rōmaji": "Kaminari",
+          "appeardManga": "10",
+          "appeardAnime": "8",
+          "clowCard": "https://i.ibb.co/41jrxGB/Trueno.jpg",
+          "sakuraCard": "https://i.ibb.co/1LvxQsH/Trueno-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza la parálisis, la energía",
+          "__v": 0,
+          "predictionTime": "Futuro"
+        }
+      ]
+    },
+    {
+      "id": "p-9e17fc06-a5cd-4b4d-bd04-b5d867619653",
+      "user_id": "76e390be-5393-406a-bb04-02475ca3c55d",
+      "day": "26/1/2024",
+      "cards": [
+        {
+          "id": "4",
+          "cardNumber": 4,
+          "spanishName": "Agua",
+          "englishName": "The Watery",
+          "kanji": "水",
+          "Rōmaji": "Mizu",
+          "appeardManga": "3",
+          "appeardAnime": "3",
+          "clowCard": "https://i.ibb.co/KLrv3BF/Agua.jpg",
+          "sakuraCard": "https://i.ibb.co/HxLpWy5/Agua-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza los sentimientos, la expansión, la habilidad de la adivinación.",
+          "__v": 0,
+          "predictionTime": "Pasado"
+        },
+        {
+          "id": "5",
+          "cardNumber": 5,
+          "spanishName": "Lluvia",
+          "englishName": "The Rain",
+          "kanji": "雨",
+          "Rōmaji": "Ame",
+          "appeardManga": "",
+          "appeardAnime": "4",
+          "clowCard": "https://i.ibb.co/ryfdTjL/Lluvia.jpg",
+          "sakuraCard": "https://i.ibb.co/YBxFKBt/Lluvia-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza la cancelación de planes o procesos debido a agentes externos.",
+          "__v": 0,
+          "predictionTime": "Presente"
+        },
+        {
+          "id": "6",
+          "cardNumber": 6,
+          "spanishName": "Bosque",
+          "englishName": "The Wood",
+          "kanji": "樹",
+          "Rōmaji": "Ki",
+          "appeardManga": "1",
+          "appeardAnime": "4",
+          "clowCard": "https://i.ibb.co/17154Dk/Bosque.jpg",
+          "sakuraCard": "https://i.ibb.co/hYMDk2F/Bosque-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza el dominio y la integración del medio, de la naturaleza.",
+          "__v": 0,
+          "predictionTime": "Futuro"
+        }
+      ]
+    },
+    {
+      "id": "p-a3a0dc95-e627-4086-b29f-19ef68033258",
+      "user_id": "76e390be-5393-406a-bb04-02475ca3c55d",
+      "day": "26/1/2024",
+      "cards": [
+        {
+          "id": "3",
+          "cardNumber": 3,
+          "spanishName": "Sombra",
+          "englishName": "The Shadow",
+          "kanji": "影",
+          "Rōmaji": "Kage",
+          "appeardManga": "10",
+          "appeardAnime": "2",
+          "clowCard": "https://i.ibb.co/9W42mHB/Sombra.jpg",
+          "sakuraCard": "https://i.ibb.co/q7dgnKZ/Sombra-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Indica el sigilo.",
+          "__v": 0,
+          "predictionTime": "Pasado"
+        },
+        {
+          "id": "5",
+          "cardNumber": 5,
+          "spanishName": "Lluvia",
+          "englishName": "The Rain",
+          "kanji": "雨",
+          "Rōmaji": "Ame",
+          "appeardManga": "",
+          "appeardAnime": "4",
+          "clowCard": "https://i.ibb.co/ryfdTjL/Lluvia.jpg",
+          "sakuraCard": "https://i.ibb.co/YBxFKBt/Lluvia-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza la cancelación de planes o procesos debido a agentes externos.",
+          "__v": 0,
+          "predictionTime": "Presente"
+        },
+        {
+          "id": "6",
+          "cardNumber": 6,
+          "spanishName": "Bosque",
+          "englishName": "The Wood",
+          "kanji": "樹",
+          "Rōmaji": "Ki",
+          "appeardManga": "1",
+          "appeardAnime": "4",
+          "clowCard": "https://i.ibb.co/17154Dk/Bosque.jpg",
+          "sakuraCard": "https://i.ibb.co/hYMDk2F/Bosque-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza el dominio y la integración del medio, de la naturaleza.",
+          "__v": 0,
+          "predictionTime": "Futuro"
+        }
+      ]
+    },
+    {
+      "id": "p-2be9bc35-fd0c-4b94-a0fc-c72a6c674275",
+      "user_id": "76e390be-5393-406a-bb04-02475ca3c55d",
+      "day": "26/1/2024",
+      "cards": [
+        {
+          "id": "35",
+          "cardNumber": 35,
+          "spanishName": "Cambio",
+          "englishName": "The Change",
+          "kanji": "替",
+          "Rōmaji": "Kawa",
+          "appeardManga": "",
+          "appeardAnime": "32",
+          "clowCard": "https://i.ibb.co/xmxSHrT/Cambio.jpg",
+          "sakuraCard": "https://i.ibb.co/wMRvj2L/Cambio-Sakura.jpg",
+          "meaning": "Esta carta simboliza cambio, apariencia, adaptación.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "predictionTime": "Pasado"
+        },
+        {
+          "id": "29",
+          "cardNumber": 29,
+          "spanishName": "Regreso",
+          "englishName": "The Return",
+          "kanji": "戻",
+          "Rōmaji": "Modo",
+          "appeardManga": "",
+          "appeardAnime": "27",
+          "clowCard": "https://i.ibb.co/ctBrqNj/Regreso.jpg",
+          "sakuraCard": "https://i.ibb.co/Hq1H85v/Regreso-Sakura.jpg",
+          "meaning": "Simboliza la repetición de algo pasado, el mirar hacia atrás.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "predictionTime": "Presente"
+        },
+        {
+          "id": "4",
+          "cardNumber": 4,
+          "spanishName": "Agua",
+          "englishName": "The Watery",
+          "kanji": "水",
+          "Rōmaji": "Mizu",
+          "appeardManga": "3",
+          "appeardAnime": "3",
+          "clowCard": "https://i.ibb.co/KLrv3BF/Agua.jpg",
+          "sakuraCard": "https://i.ibb.co/HxLpWy5/Agua-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza los sentimientos, la expansión, la habilidad de la adivinación.",
+          "__v": 0,
+          "predictionTime": "Futuro"
+        }
+      ]
+    },
+    {
+      "id": "p-706dd6fe-9d77-46ad-807f-58800d20183d",
+      "user_id": "76e390be-5393-406a-bb04-02475ca3c55d",
+      "day": "26/1/2024",
+      "cards": [
+        {
+          "id": "35",
+          "cardNumber": 35,
+          "spanishName": "Cambio",
+          "englishName": "The Change",
+          "kanji": "替",
+          "Rōmaji": "Kawa",
+          "appeardManga": "",
+          "appeardAnime": "32",
+          "clowCard": "https://i.ibb.co/xmxSHrT/Cambio.jpg",
+          "sakuraCard": "https://i.ibb.co/wMRvj2L/Cambio-Sakura.jpg",
+          "meaning": "Esta carta simboliza cambio, apariencia, adaptación.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "predictionTime": "Pasado"
+        },
+        {
+          "id": "29",
+          "cardNumber": 29,
+          "spanishName": "Regreso",
+          "englishName": "The Return",
+          "kanji": "戻",
+          "Rōmaji": "Modo",
+          "appeardManga": "",
+          "appeardAnime": "27",
+          "clowCard": "https://i.ibb.co/ctBrqNj/Regreso.jpg",
+          "sakuraCard": "https://i.ibb.co/Hq1H85v/Regreso-Sakura.jpg",
+          "meaning": "Simboliza la repetición de algo pasado, el mirar hacia atrás.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "predictionTime": "Presente"
+        },
+        {
+          "id": "5",
+          "cardNumber": 5,
+          "spanishName": "Lluvia",
+          "englishName": "The Rain",
+          "kanji": "雨",
+          "Rōmaji": "Ame",
+          "appeardManga": "",
+          "appeardAnime": "4",
+          "clowCard": "https://i.ibb.co/ryfdTjL/Lluvia.jpg",
+          "sakuraCard": "https://i.ibb.co/YBxFKBt/Lluvia-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza la cancelación de planes o procesos debido a agentes externos.",
+          "__v": 0,
+          "predictionTime": "Futuro"
+        }
+      ]
+    },
+    {
+      "id": "p-84207287-5b89-4af2-aabf-492fe516809b",
+      "user_id": "6c06d699-a0b5-4095-8214-c21f4b9fbe3e",
+      "day": "26/1/2024",
+      "cards": [
+        {
+          "id": "5",
+          "cardNumber": 5,
+          "spanishName": "Lluvia",
+          "englishName": "The Rain",
+          "kanji": "雨",
+          "Rōmaji": "Ame",
+          "appeardManga": "",
+          "appeardAnime": "4",
+          "clowCard": "https://i.ibb.co/ryfdTjL/Lluvia.jpg",
+          "sakuraCard": "https://i.ibb.co/YBxFKBt/Lluvia-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza la cancelación de planes o procesos debido a agentes externos.",
+          "__v": 0,
+          "predictionTime": "Pasado"
+        },
+        {
+          "id": "6",
+          "cardNumber": 6,
+          "spanishName": "Bosque",
+          "englishName": "The Wood",
+          "kanji": "樹",
+          "Rōmaji": "Ki",
+          "appeardManga": "1",
+          "appeardAnime": "4",
+          "clowCard": "https://i.ibb.co/17154Dk/Bosque.jpg",
+          "sakuraCard": "https://i.ibb.co/hYMDk2F/Bosque-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza el dominio y la integración del medio, de la naturaleza.",
+          "__v": 0,
+          "predictionTime": "Presente"
+        },
+        {
+          "id": "8",
+          "cardNumber": 8,
+          "spanishName": "Ilusión",
+          "englishName": "The Illusion",
+          "kanji": "幻",
+          "Rōmaji": "Maboroshi",
+          "appeardManga": "5",
+          "appeardAnime": "6",
+          "clowCard": "https://i.ibb.co/T0JB8PM/Ilusi-n.jpg",
+          "sakuraCard": "https://i.ibb.co/b5rxvqT/Ilusi-n-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza la esperanza, las ganas, la alegría.",
+          "__v": 0,
+          "predictionTime": "Futuro"
+        }
+      ]
+    },
+    {
+      "id": "p-f7267935-903b-45e3-a3f7-2bc71e89097b",
+      "user_id": "6c06d699-a0b5-4095-8214-c21f4b9fbe3e",
+      "day": "26/1/2024",
+      "cards": [
+        {
+          "id": "3",
+          "cardNumber": 3,
+          "spanishName": "Sombra",
+          "englishName": "The Shadow",
+          "kanji": "影",
+          "Rōmaji": "Kage",
+          "appeardManga": "10",
+          "appeardAnime": "2",
+          "clowCard": "https://i.ibb.co/9W42mHB/Sombra.jpg",
+          "sakuraCard": "https://i.ibb.co/q7dgnKZ/Sombra-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Indica el sigilo.",
+          "__v": 0,
+          "predictionTime": "Pasado"
+        },
+        {
+          "id": "4",
+          "cardNumber": 4,
+          "spanishName": "Agua",
+          "englishName": "The Watery",
+          "kanji": "水",
+          "Rōmaji": "Mizu",
+          "appeardManga": "3",
+          "appeardAnime": "3",
+          "clowCard": "https://i.ibb.co/KLrv3BF/Agua.jpg",
+          "sakuraCard": "https://i.ibb.co/HxLpWy5/Agua-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza los sentimientos, la expansión, la habilidad de la adivinación.",
+          "__v": 0,
+          "predictionTime": "Presente"
+        },
+        {
+          "id": "5",
+          "cardNumber": 5,
+          "spanishName": "Lluvia",
+          "englishName": "The Rain",
+          "kanji": "雨",
+          "Rōmaji": "Ame",
+          "appeardManga": "",
+          "appeardAnime": "4",
+          "clowCard": "https://i.ibb.co/ryfdTjL/Lluvia.jpg",
+          "sakuraCard": "https://i.ibb.co/YBxFKBt/Lluvia-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza la cancelación de planes o procesos debido a agentes externos.",
+          "__v": 0,
+          "predictionTime": "Futuro"
+        }
+      ]
+    },
+    {
+      "id": "p-359df16e-8dc3-43e0-a88d-c90770ad7eed",
+      "user_id": "6c06d699-a0b5-4095-8214-c21f4b9fbe3e",
+      "day": "26/1/2024",
+      "cards": [
+        {
+          "id": "2",
+          "cardNumber": 2,
+          "spanishName": "Vuelo",
+          "englishName": "The fly",
+          "kanji": "翔",
+          "Rōmaji": "Shō",
+          "appeardManga": "2",
+          "appeardAnime": "1",
+          "clowCard": "https://i.ibb.co/nkySYwk/Vuelo.jpg",
+          "sakuraCard": "https://i.ibb.co/ry15JSV/Vuelo-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza la libertad, la evasión.",
+          "__v": 0,
+          "predictionTime": "Pasado"
+        },
+        {
+          "id": "4",
+          "cardNumber": 4,
+          "spanishName": "Agua",
+          "englishName": "The Watery",
+          "kanji": "水",
+          "Rōmaji": "Mizu",
+          "appeardManga": "3",
+          "appeardAnime": "3",
+          "clowCard": "https://i.ibb.co/KLrv3BF/Agua.jpg",
+          "sakuraCard": "https://i.ibb.co/HxLpWy5/Agua-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza los sentimientos, la expansión, la habilidad de la adivinación.",
+          "__v": 0,
+          "predictionTime": "Presente"
+        },
+        {
+          "id": "5",
+          "cardNumber": 5,
+          "spanishName": "Lluvia",
+          "englishName": "The Rain",
+          "kanji": "雨",
+          "Rōmaji": "Ame",
+          "appeardManga": "",
+          "appeardAnime": "4",
+          "clowCard": "https://i.ibb.co/ryfdTjL/Lluvia.jpg",
+          "sakuraCard": "https://i.ibb.co/YBxFKBt/Lluvia-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza la cancelación de planes o procesos debido a agentes externos.",
+          "__v": 0,
+          "predictionTime": "Futuro"
+        }
+      ]
+    }
+  ]
+}

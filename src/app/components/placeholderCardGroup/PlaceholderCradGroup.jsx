@@ -6,13 +6,13 @@ export default function PlaceholderCardGroup() {
   return (
     <section
       className={
-        "mt-[5rem] mb-[4rem] flex flex-row gap-[6rem] items-center justify-center lg:mt-[0] lg:mb-[2rem] min-[1400px]:mt-[-9rem]  min-[1400px]:mb-[0rem] "
+        "mt-[5rem] mb-[4rem] flex flex-row gap-[2rem] items-center justify-center lg:mt-[0] lg:mb-[2rem] min-[1400px]:mt-[-7rem]  min-[1400px]:mb-[0] "
       }
     >
       <PlaceholderCard
         className={"past"}
         time={"PASADO"}
-        background={"bg-purpleDrak"}
+        background={"bg-blueDark"}
         predictionTime="Pasado"
         showReveledBtn={false}
       />
@@ -26,7 +26,7 @@ export default function PlaceholderCardGroup() {
       <PlaceholderCard
         className={"future"}
         time={"FUTURO"}
-        background={"bg-blueLigth"}
+        background={"bg-blueDark"}
         predictionTime="Futuro"
         showReveledBtn={false}
       />
